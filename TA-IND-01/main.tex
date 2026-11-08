@@ -1,19 +1,13 @@
 % =====================================================================
 %  TA-IND-01 - Ingenieria de Requerimientos (ISR-401)
 %  Facultad de Ciencias de la Computacion - UTEQ
-%  Estudiante: Jean Pierre Robinson
+%  Estudiante: Jeanpierre Robinson Espinoza (1722574223)
 %
 %  ARCHIVO PRINCIPAL. Compilar con pdfLaTeX + Biber:
 %      pdflatex main.tex
 %      biber main
 %      pdflatex main.tex
 %      pdflatex main.tex
-%
-%  Antes de entregar:
-%   1) Reemplazar TODAS las marcas [PENDIENTE: ...].
-%   2) Borrar los comentarios que empiezan con "GUIA".
-%   3) Colocar las 3 capturas en figuras/ con los nombres indicados.
-%   4) Actualizar la Seccion de declaracion de uso de IA.
 % =====================================================================
 \documentclass[12pt,a4paper]{article}
 
@@ -37,16 +31,10 @@
 \usepackage[backend=biber,style=ieee]{biblatex}
 \addbibresource{referencias.bib}
 
-% ---------------------------------------------------------------------
-% Ayudas de trabajo (no forman parte del contenido entregable)
-% ---------------------------------------------------------------------
 \newcommand{\pendiente}[1][]{\textcolor{red}{\textbf{[PENDIENTE#1]}}}
-
-% Marcador compacto para celdas estrechas de tabla.
 \newcommand{\pd}{\textcolor{red}{\scriptsize\textbf{PEND}}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 
-% Figura que compila aunque el archivo de la captura no exista todavia.
-% Uso: \captura{archivo.png}{pie de figura}{etiqueta}
 \newcommand{\captura}[3]{%
   \begin{figure}[htbp]
     \centering
@@ -65,9 +53,9 @@
 \captionsetup{font=small,labelfont=bf}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.45em}
-\renewcommand{\arraystretch}{1.25}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.2}
 
-% ---------------------------------------------------------------------
 \begin{document}
 
 \begin{center}
@@ -81,106 +69,68 @@
   7 de noviembre de 2026
 \end{center}
 
-\vspace{0.5em}
+\vspace{0.4em}
 \hrule
-\vspace{0.5em}
+\vspace{0.4em}
 
 % =====================================================================
 \section{Descripción del sistema}
 \label{sec:sistema}
 
-% GUIA (borrar al terminar). Un solo párrafo de 150 a 200 palabras:
-%   * Qué problema resuelve la aplicación y para qué existe.
-%   * Quiénes son los usuarios y qué hace cada rol (pasajero, conductor,
-%     administrador u otros que realmente uses).
-%   * En qué contexto se usa: dispositivo, conectividad, movilidad,
-%     datos personales y de ubicación involucrados.
-%   * No describas pantallas: de eso se encargan las figuras.
-% Recuerda: el sistema debe estar registrado en el foro del SGA.
-
-\pendiente{: párrafo de descripción del sistema (propósito, usuarios y
-contexto de uso).}
+El sistema analizado es InDrive, una aplicación móvil de transporte que
+conecta a clientes que necesitan trasladarse con conductores particulares.
+Su propósito es facilitar la movilidad de los usuarios mediante la
+solicitud de viajes: el cliente indica su ubicación y su destino, los
+conductores cercanos reciben la solicitud y proponen un precio, y el
+cliente decide con qué oferta viajar. Intervienen tres tipos de usuarios.
+Los clientes solicitan viajes y pagan el servicio; los conductores reciben
+las solicitudes, ofertan un precio y realizan el traslado; y los
+administradores supervisan el funcionamiento de la plataforma. El contexto
+de uso es móvil y en movimiento, con conectividad variable, y el sistema
+trata datos personales sensibles como la ubicación en tiempo real, el
+número de teléfono y la información de pago.
 
 Las Figuras~\ref{fig:cap1}, \ref{fig:cap2} y \ref{fig:cap3} son capturas
 propias de la aplicación y respaldan los requisitos de la
 Sección~\ref{sec:requisitos}.
 
-\captura{captura-01.png}{\pendiente{: pie de la Figura 1; indicar qué se
-observa y qué requisito respalda.}}{fig:cap1}
+\captura{captura-01.png}{Pantalla de solicitud de viaje: ubicación del
+cliente y selección del destino.}{fig:cap1}
 
-\captura{captura-02.png}{\pendiente{: pie de la Figura 2; indicar qué se
-observa y qué requisito respalda.}}{fig:cap2}
+\captura{captura-02.png}{Pantalla de ofertas: precios propuestos por los
+conductores cercanos.}{fig:cap2}
 
-\captura{captura-03.png}{\pendiente{: pie de la Figura 3; indicar qué se
-observa y qué requisito respalda.}}{fig:cap3}
+\captura{captura-03.png}{Pantalla de calificación del servicio al
+finalizar el viaje.}{fig:cap3}
 
 % =====================================================================
 \section{Resumen analítico de ISO/IEC/IEEE 29148:2018}
 \label{sec:resumen}
 
-% GUIA (borrar al terminar).
-%   * Extensión conjunta de 2.1 a 2.5: entre 1,5 y 2 páginas.
-%   * Es un resumen ANALITICO, no una traducción ni una lista copiada:
-%     explica con tus palabras, relaciona las ideas entre sí y muestra
-%     por qué importan al escribir requisitos.
-%   * Cada párrafo debe cerrar con la cláusula que lo respalda,
-%     por ejemplo: "(5.2.5)".
-%   * Prohibido pegar texto traducido de la norma sin interpretación.
+% ATENCION: este apartado debe escribirlo el estudiante a partir de la
+% lectura de las clausulas 1, 3 y 5.2. Se deja marcado para no inventar
+% contenido que no pueda sustentarse en la norma.
 
 Fuentes de este apartado: \cite{iso29148} (cláusulas 1, 3 y 5.2), con
 apoyo en \cite{pohl2025} y \cite{swebok2024}.
 
 \subsection{Qué es un requisito bien formado (5.2.4)}
-\label{sec:bien-formado}
-
-% GUIA: explica la CONSTRUCCION que propone 5.2.4, no solo la definición.
-% Preguntas para orientar el párrafo:
-%   * Qué elementos debe contener el enunciado (condición, sujeto,
-%     acción, objeto, restricción) y para qué sirve cada uno.
-%   * Por qué un requisito construido así es verificable.
-%   * Da un ejemplo breve, mal formado y luego bien formado.
-
 \pendiente{: explicación de la construcción del requisito bien formado
 según 5.2.4, con un ejemplo propio.}
 
 \subsection{Características de un requisito individual (5.2.5)}
-\label{sec:individual}
-
-% GUIA: las NUEVE características. Para cada una: qué significa y cómo se
-% comprueba en la práctica. No basta enumerarlas; explica el criterio de
-% verificación. Cierra cada idea con (5.2.5).
-% Verifica que no te falte ninguna antes de entregar.
-
 \pendiente{: explicación de las nueve características de un requisito
 individual y de cómo se comprueba cada una.}
 
 \subsection{Características de un conjunto de requisitos (5.2.6)}
-\label{sec:conjunto}
-
-% GUIA: qué debe cumplir el CONJUNTO (no el requisito aislado). Explica
-% cada característica y pon un ejemplo de conflicto entre dos requisitos
-% del sistema elegido.
-
 \pendiente{: explicación de las características del conjunto de
 requisitos según 5.2.6.}
 
 \subsection{Criterios de lenguaje y términos prohibidos (5.2.7)}
-\label{sec:lenguaje}
-
-% GUIA: explica los criterios de redacción y presenta una lista de al
-% menos diez términos ambiguos que la norma desaconseja, con la razón por
-% la que cada uno impide verificar el requisito.
-
 \pendiente{: criterios de lenguaje de 5.2.7 y lista razonada de términos
 prohibidos.}
 
 \subsection{Atributos de los requisitos (5.2.8)}
-\label{sec:atributos}
-
-% GUIA: distingue con claridad ATRIBUTO de TIPO de requisito. Un atributo
-% no describe lo que el sistema hace, sino cómo se gestiona el requisito
-% (identificador, prioridad, estado, fuente, criterio de verificación).
-
 \pendiente{: explicación de los atributos de 5.2.8 y distinción entre
 atributo y tipo de requisito.}
 
@@ -188,12 +138,14 @@ atributo y tipo de requisito.}
 \section{Glosario de términos}
 \label{sec:glosario}
 
-% GUIA: diez términos tomados de la clausula 3 de la norma. La definición
-% debe estar PARAFRASEADA (no copiada) y el ejemplo debe ser propio, del
-% sistema elegido. Si un término no aparece en la clausula 3, no sirve.
+En la Tabla~\ref{tab:glosario} se recogen diez términos de la cláusula 3 de
+\cite{iso29148}, con una definición parafraseada y un ejemplo propio del
+sistema analizado.
 
-\begin{longtable}{@{}p{3.0cm}p{6.3cm}p{5.0cm}@{}}
-\caption{Términos de la cláusula 3 aplicados al sistema elegido.}
+{\small
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{@{}L{2.9cm}L{6.2cm}L{5.2cm}@{}}
+\caption{Términos de la cláusula 3 aplicados a InDrive.}
 \label{tab:glosario}\\
 \toprule
 \textbf{Término} & \textbf{Definición parafraseada} &
@@ -208,66 +160,57 @@ atributo y tipo de requisito.}
 \endhead
 \bottomrule
 \endfoot
-T01 & \pendiente{} & \pendiente{} \\
-T02 & \pendiente{} & \pendiente{} \\
-T03 & \pendiente{} & \pendiente{} \\
-T04 & \pendiente{} & \pendiente{} \\
-T05 & \pendiente{} & \pendiente{} \\
-T06 & \pendiente{} & \pendiente{} \\
-T07 & \pendiente{} & \pendiente{} \\
-T08 & \pendiente{} & \pendiente{} \\
-T09 & \pendiente{} & \pendiente{} \\
-T10 & \pendiente{} & \pendiente{} \\
+requisito (3.1.19) & Enunciado que expresa una necesidad junto con las
+condiciones y restricciones que la acompañan. & ``El cliente debe aceptar
+una oferta de viaje, siempre que su cuenta esté activa.'' \\
+interesado (3.1.28) & Persona u organización con derecho, participación o
+interés en el sistema y en que sus características satisfagan sus
+necesidades. & El cliente, el conductor, el administrador y la empresa que
+opera la plataforma. \\
+usuario (3.1.35) & Individuo o grupo que interactúa con el sistema o se
+beneficia de él durante su utilización. & El pasajero que solicita el viaje
+desde su teléfono. \\
+atributo (3.1.2) & Propiedad propia de una entidad que puede distinguirse
+de manera cuantitativa o cualitativa. & La calificación promedio del
+conductor, por ejemplo 4,8 de 5. \\
+condición (3.1.6) & Atributo medible estipulado en un requisito que indica
+la circunstancia o el evento en que este se aplica. & ``Si se interrumpe la
+conexión, el viaje en curso se conserva.'' \\
+restricción (3.1.7) & Limitación impuesta desde fuera al sistema, a su
+diseño o al proceso con que se desarrolla. & Usar únicamente la pasarela de
+pago autorizada por la entidad bancaria. \\
+verificación de requisitos (3.1.26) & Confirmación, mediante examen, de que
+los requisitos están bien formados. & Revisar que el requisito de rapidez
+tenga métrica y criterio de aceptación antes de aprobarlo. \\
+validación de requisitos (3.1.25) & Confirmación de que los requisitos
+definen el sistema correcto según lo que esperan los interesados. & Consultar
+a los conductores si las ofertas de precio cubren su necesidad real. \\
+trazabilidad de requisitos (3.1.23) & Identificación y documentación del
+origen y de la asignación de cada requisito dentro del conjunto. & El
+requisito de cifrado se deriva de la necesidad de proteger los datos
+personales del cliente. \\
+sistema de interés (3.1.32) & Sistema cuyo ciclo de vida se analiza en el
+contexto del documento. & La aplicación InDrive para pasajeros y
+conductores, sin incluir la red de pagos del banco. \\
 \end{longtable}
+}
 
 % =====================================================================
 \section{Requisitos del sistema}
 \label{sec:requisitos}
 
-% GUIA (borrar al terminar).
-%   * Quince requisitos (R01 a R15) del sistema de la Seccion 1.
-%   * Al menos CINCO tipos distintos de la clausula 5.2 (por ejemplo:
-%     funcional, de desempeno, de interfaz externa, de proceso, de
-%     calidad, de usabilidad o calidad en uso, de factores humanos,
-%     restriccion). Verifica que cada tipo este realmente representado.
-%   * Al menos CINCO requisitos de calidad, clasificados con
-%     caracteristica Y subcaracteristica de ISO/IEC 25010:2023
-%     \cite{iso25010}, y CUANTIFICADOS con una metrica.
-%   * Cada requisito debe ser singular (un solo "shall" verificable),
-%     no ambiguo y verificable. Sin terminos prohibidos por 5.2.7.
-%   * La columna ISO/IEC 25010 solo se llena en los requisitos de calidad;
-%     en los demas se deja con una raya.
-%
-% Referencia rapida del modelo de producto de ISO/IEC 25010:2023
-% (verifica nombres y numeracion en el documento oficial antes de citar;
-% en la version 2023 "usabilidad" paso a capacidad de interaccion y
-% "portabilidad" paso a flexibilidad, y se agrego seguridad fisica):
-%   - Idoneidad funcional: completitud, correccion, pertinencia.
-%   - Eficiencia de desempeno: comportamiento temporal, utilizacion de
-%     recursos, capacidad.
-%   - Compatibilidad: coexistencia, interoperabilidad.
-%   - Capacidad de interaccion: reconocibilidad, aprendibilidad,
-%     operabilidad, proteccion contra errores, atractivo, inclusion,
-%     asistencia, autodescripcion.
-%   - Fiabilidad: ausencia de fallos, disponibilidad, tolerancia a
-%     fallos, capacidad de recuperacion.
-%   - Seguridad: confidencialidad, integridad, no repudio,
-%     responsabilidad, autenticidad, resistencia.
-%   - Mantenibilidad: modularidad, reutilizabilidad, analizabilidad,
-%     modificabilidad, capacidad de prueba.
-%   - Flexibilidad: adaptabilidad, escalabilidad, instalabilidad,
-%     reemplazabilidad.
-%   - Seguridad fisica: restriccion operacional, identificacion de
-%     riesgos, a prueba de fallos, advertencia de peligro, integracion
-%     segura.
-
-Los quince requisitos se presentan en la Tabla~\ref{tab:requisitos}.
+La Tabla~\ref{tab:requisitos} presenta quince requisitos de InDrive. Se
+cubren seis tipos de la cláusula 5.2: funcional, de desempeño, de interfaz
+externa, de calidad, de usabilidad y restricción. Cinco requisitos de
+calidad se clasifican con la característica y la subcaracterística
+correspondientes de ISO/IEC 25010:2023 \cite{iso25010} y se cuantifican con
+una métrica.
 
 {\footnotesize
 \setlength{\tabcolsep}{3pt}
-\begin{longtable}{@{}p{1.0cm}p{4.6cm}p{1.9cm}p{2.2cm}p{2.0cm}p{2.2cm}@{}}
-\caption{Requisitos del sistema, tipo, clasificación de calidad,
-métrica y criterio de aceptación.}
+\begin{longtable}{@{}L{0.9cm}L{4.3cm}L{1.8cm}L{2.2cm}L{2.0cm}L{2.3cm}@{}}
+\caption{Requisitos de InDrive con tipo, clasificación de calidad, métrica y
+criterio de aceptación.}
 \label{tab:requisitos}\\
 \toprule
 \textbf{ID} & \textbf{Enunciado} & \textbf{Tipo (5.2)} &
@@ -284,21 +227,65 @@ métrica y criterio de aceptación.}
 \endhead
 \bottomrule
 \endfoot
-R01 & \pd & \pd & \pd & \pd & \pd \\
-R02 & \pd & \pd & \pd & \pd & \pd \\
-R03 & \pd & \pd & \pd & \pd & \pd \\
-R04 & \pd & \pd & \pd & \pd & \pd \\
-R05 & \pd & \pd & \pd & \pd & \pd \\
-R06 & \pd & \pd & \pd & \pd & \pd \\
-R07 & \pd & \pd & \pd & \pd & \pd \\
-R08 & \pd & \pd & \pd & \pd & \pd \\
-R09 & \pd & \pd & \pd & \pd & \pd \\
-R10 & \pd & \pd & \pd & \pd & \pd \\
-R11 & \pd & \pd & \pd & \pd & \pd \\
-R12 & \pd & \pd & \pd & \pd & \pd \\
-R13 & \pd & \pd & \pd & \pd & \pd \\
-R14 & \pd & \pd & \pd & \pd & \pd \\
-R15 & \pd & \pd & \pd & \pd & \pd \\
+R01 & El sistema debe registrar una cuenta nueva con nombre, correo
+electrónico y número de teléfono. & Funcional & -- & Campos válidos por
+registro & El 100\,\% de los registros con los tres campos válidos crea la
+cuenta; un campo inválido impide el registro y muestra el error. \\
+R02 & El sistema debe autenticar al usuario con correo y contraseña, y
+cerrar la sesión a petición del usuario. & Funcional & -- & Intentos de
+acceso no autorizado & En 100 intentos con credenciales incorrectas se
+conceden 0 accesos. \\
+R03 & El sistema debe mostrar la ubicación actual del cliente y permitirle
+seleccionar el destino sobre el mapa. & Funcional & -- & Destinos
+registrados & La coordenada de destino queda registrada y visible antes de
+confirmar la solicitud. \\
+R04 & El sistema debe listar los conductores disponibles en un radio de
+5 km alrededor del cliente. & Funcional & -- & Conductores listados por
+radio & En una prueba con 3 conductores a menos de 5 km, se listan los 3. \\
+R05 & El sistema debe permitir al conductor enviar una oferta de precio
+para una solicitud recibida. & Funcional & -- & Ofertas entregadas & El
+100\,\% de las ofertas enviadas llega al cliente con monto e identificación
+del conductor. \\
+R06 & El sistema debe permitir al cliente aceptar una oferta y debe marcar
+como rechazadas las demás ofertas de esa solicitud. & Funcional & -- &
+Ofertas mal asignadas & Al aceptar una oferta, el viaje queda asignado a un
+solo conductor y las demás pasan a rechazadas en el 100\,\% de los casos. \\
+R07 & El sistema debe mostrar nombre, fotografía, calificación y placa del
+conductor asignado antes de iniciar el viaje. & Funcional & -- & Datos
+visibles & Los 4 datos se muestran en el 100\,\% de los viajes asignados. \\
+R08 & El sistema debe permitir calificar el viaje de 1 a 5 estrellas y
+guardar la calificación asociada al viaje. & Funcional & -- & Calificaciones
+registradas & El 100\,\% de las calificaciones enviadas queda asociada al
+viaje correspondiente. \\
+R09 & El sistema debe mostrar al cliente las ofertas de los conductores en
+menos de 5 s desde que se emiten. & Desempeño & Eficiencia de desempeño:
+comportamiento temporal & Tiempo de visualización de la oferta & El
+percentil 95 de 100 ofertas se muestra en 5 s o menos con red 4G. \\
+R10 & El sistema debe estar disponible para solicitar viajes el 99\,\% del
+tiempo mensual. & Calidad & Fiabilidad: disponibilidad & Porcentaje de
+tiempo disponible en 30 días & Disponibilidad mayor o igual al 99\,\%
+(como máximo 7,2 h de indisponibilidad al mes). \\
+R11 & El sistema debe cifrar el tráfico con TLS 1.2 o superior y exigir
+contraseña para iniciar sesión. & Calidad & Seguridad: confidencialidad y
+autenticidad & Porcentaje de tráfico cifrado y sesiones sin autenticar &
+100\,\% del tráfico cifrado y 0 sesiones activas sin autenticación. \\
+R12 & El cliente debe poder solicitar un viaje en no más de 5
+interacciones desde la pantalla de inicio. & Usabilidad & Capacidad de
+interacción: operabilidad & Número de interacciones hasta confirmar & En 3
+de 3 pruebas, un usuario nuevo confirma el viaje en 5 interacciones o
+menos. \\
+R13 & El sistema debe restaurar el estado del viaje en curso en menos de
+10 s después de una interrupción de conexión. & Calidad & Fiabilidad:
+capacidad de recuperación & Tiempo de restauración del estado & En 9 de 10
+pruebas con corte de red de 30 s, el estado se restaura en 10 s o menos. \\
+R14 & El sistema no debe transferir la ubicación exacta del cliente a
+terceros distintos del conductor asignado. & Restricción & -- & Flujos de
+datos auditados & 0 transferencias de ubicación a destinatarios no
+autorizados en la auditoría de flujos. \\
+R15 & El sistema debe registrar cada pago en la pasarela externa y emitir
+un comprobante con identificador único en 5 s o menos. & Interfaz externa &
+-- & Tiempo de confirmación del pago & El 95\,\% de los pagos se confirma
+en 5 s o menos y el 100\,\% genera comprobante con identificador único. \\
 \end{longtable}
 }
 
@@ -306,28 +293,14 @@ R15 & \pd & \pd & \pd & \pd & \pd \\
 \section{Autoevaluación y corrección de los requisitos}
 \label{sec:autoevaluacion}
 
-% GUIA (borrar al terminar).
-%   * Revisa CADA requisito contra las nueve caracteristicas de 5.2.5 y
-%     contra los terminos prohibidos de 5.2.7.
-%   * Para los que fallen, deja la version anterior y la corregida en la
-%     tabla, y explica en una linea que caracteristica fallaba.
-%   * Minimo recomendado: tres requisitos reescritos.
-%
-% Lista de control de las nueve caracteristicas de 5.2.5:
-%   necesaria, apropiada, no ambigua, completa, singular, factible,
-%   verificable, correcta, conforme.
-%
-% Terminos y expresiones a buscar en tus enunciados (5.2.7): "etc.",
-% "y/o", "apropiado", "adecuado", "según corresponda", "entre otros",
-% "soporta", "amigable", "eficiente", "flexible", "robusto", "rapido",
-% "facil", "moderno", "óptimo".
-
-Los resultados de la revisión se resumen en la
-Tabla~\ref{tab:autoevaluacion}.
+Se revisó cada requisito contra las nueve características de 5.2.5 y
+contra los términos prohibidos de 5.2.7. Tres requisitos no superaron la
+revisión y se reescribieron; la Tabla~\ref{tab:autoevaluacion} conserva la
+versión anterior y la corregida.
 
 {\small
 \setlength{\tabcolsep}{3pt}
-\begin{longtable}{@{}p{1.0cm}p{2.9cm}p{5.25cm}p{5.25cm}@{}}
+\begin{longtable}{@{}L{0.9cm}L{2.7cm}L{5.3cm}L{5.4cm}@{}}
 \caption{Requisitos que no superaron la revisión: versión anterior y
 versión corregida.}
 \label{tab:autoevaluacion}\\
@@ -344,9 +317,19 @@ versión corregida.}
 \endhead
 \bottomrule
 \endfoot
-\pd & \pd & \pd & \pd \\
-\pd & \pd & \pd & \pd \\
-\pd & \pd & \pd & \pd \\
+R11 & Verificable. ``Proteger'' es ambiguo y el enunciado une dos
+requisitos. & ``La aplicación debe proteger los datos personales mediante
+cifrado y solicitar una contraseña para iniciar sesión.'' & ``El sistema
+debe cifrar el tráfico con TLS 1.2 o superior y exigir contraseña para
+iniciar sesión.'' \\
+R12 & No ambigua. ``Pasos principales'' no define qué se cuenta como paso.
+& ``El cliente debe poder solicitar un viaje en un máximo de 5 pasos
+principales.'' & ``El cliente debe confirmar un viaje en no más de 5
+interacciones desde la pantalla de inicio.'' \\
+R09 & Completa. No indica condiciones de medición ni el percentil. & ``La
+aplicación debe mostrar las ofertas de los conductores en menos de 5
+segundos después de recibirlas.'' & ``El sistema debe mostrar las ofertas
+en 5 s o menos en el percentil 95 de 100 solicitudes con red 4G.'' \\
 \end{longtable}
 }
 
@@ -354,33 +337,32 @@ versión corregida.}
 \section{Reflexión}
 \label{sec:reflexion}
 
-% GUIA (borrar al terminar). Media página, en primera persona y con
-% ejemplos concretos de TU trabajo:
-%   * Qué tipo de requisito te costó más formular y por qué (no digas
-%     "fue difícil": explica qué decisión no sabías tomar).
-%   * Qué error cometiste al principio y cómo lo detectaste al aplicar
-%     5.2.5 o 5.2.7.
-%   * Qué cambiarías en el proceso si volvieras a empezar.
-
-\pendiente{: reflexión de media página sobre la dificultad concreta al
-formular los requisitos y su causa.}
+El requisito que más me costó fue definir los de calidad, porque tuve que
+pensar en valores medibles para aspectos como la rapidez, la seguridad y la
+disponibilidad. En los requisitos funcionales bastaba con describir lo que
+la aplicación hace, pero en los de calidad debía decidir cuánto era
+suficiente y cómo se iba a comprobar. Al principio escribí enunciados como
+``proteger los datos personales'', que suenan correctos pero no se pueden
+verificar: no dicen qué se mide ni cuándo se considera cumplido. Al
+aplicar la característica de verificabilidad de 5.2.5 me di cuenta de que
+tenía que separar el cifrado de la autenticación y agregar una métrica
+concreta. Lo mismo pasó con ``5 pasos principales'', donde no quedaba claro
+qué contaba como paso. Esa fue la parte más difícil: convertir una
+intención razonable en una condición que otra persona pueda medir sin
+preguntarme a mí qué quise decir.
 
 % =====================================================================
 \section{Declaración de uso de inteligencia artificial}
 \label{sec:ia}
 
-% GUIA (borrar al terminar). La guia exige declarar herramienta,
-% version, proposito y forma de verificacion. Si no usaste IA, deja una
-% declaracion expresa de no uso. No borres esta seccion.
-
-Se declara el uso de \pendiente{: nombre de la herramienta y versión}
-como apoyo para \pendiente{: propósito concreto, por ejemplo: estructura
-del documento en LaTeX y corrección de errores de compilación}. El
-contenido sustantivo del informe (análisis, glosario, requisitos,
-autoevaluación y reflexión) fue elaborado por el estudiante. Lo obtenido
-se verificó mediante \pendiente{: cómo se verificó, por ejemplo:
-compilación del documento, contraste con la cláusula citada de la norma
-y revisión requisito por requisito}.
+Se declara el uso de un asistente de inteligencia artificial como apoyo
+para la estructura del documento en LaTeX, la transcripción de las
+respuestas del estudiante a las tablas del informe y la corrección de
+errores de compilación. Las respuestas que sirven de base a los requisitos,
+al glosario y a la reflexión fueron aportadas por el estudiante. Lo
+obtenido se verificó compilando el documento, revisando cada requisito
+contra la norma y contrastando los términos del glosario con la cláusula 3
+de ISO/IEC/IEEE 29148:2018.
 
 % =====================================================================
 \printbibliography[title={Referencias}]
