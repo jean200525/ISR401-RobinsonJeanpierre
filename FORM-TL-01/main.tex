@@ -1,0 +1,236 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue,
+  pdftitle={FORM-TL-01 Taller de tipos de requisitos},
+  pdfauthor={Jeanpierre Robinson Espinoza}
+}
+
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+
+\newcommand{\codigoestudiante}{[CÓDIGO]}
+\newcommand{\nombreestudiante}{Jeanpierre Robinson Espinoza}
+
+\begin{document}
+
+\begin{center}
+{\small UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO}\\
+{\small FACULTAD DE CIENCIAS DE LA COMPUTACIÓN · CARRERA DE SOFTWARE}\\[0.25cm]
+{\large\bfseries Ingeniería de Requerimientos (ISR-401)}\\[0.15cm]
+{\Large\bfseries FORM-TL-01 · Taller de tipos de requisitos}\\[0.1cm]
+{\normalsize Plataforma de gestión de citas médicas}\\[0.35cm]
+\end{center}
+
+\begin{center}
+\small
+\begin{tabular}{@{}ll@{}}
+\toprule
+Estudiante & \nombreestudiante \\
+Código & \codigoestudiante \\
+Asignatura & Ingeniería de Requerimientos (ISR-401) · 4.o nivel · Paralelo A \\
+Docente & Gleiston Cicerón Guerrero Ulloa, PhD \\
+Unidad & Unidad 1. Fundamentos de Ingeniería de Requisitos y Proceso de Requisitos \\
+Modalidad & Individual \\
+Período & SPA 2026--2027 \\
+Fecha de cierre & sábado 31 de octubre de 2026, 23:59 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Propósito y alcance}
+
+Este documento resuelve la actividad formativa FORM-TL-01 de la asignatura Ingeniería de Requerimientos (ISR-401). A partir de los 20 enunciados de la Plataforma de gestión de citas médicas del Policlínico Ribera del Quevedo, se clasifica cada enunciado en tres dimensiones: (i) tipo de requisito (funcional, de calidad o restricción); (ii) nivel de producto o de proceso; y (iii) nivel de sistema o de software. Además, se cuantifican los cinco requisitos de calidad redactados de forma vaga y se registran las discrepancias surgidas al comparar la clasificación con un compañero.
+
+\section{Marco de clasificación}
+
+La clasificación sigue los conceptos de ingeniería de requisitos de Pohl \cite{pohl2025} y el marco de ISO/IEC/IEEE 29148:2018 \cite{iso29148}. Un requisito funcional describe lo que el sistema debe hacer; un requisito de calidad expresa una propiedad medible del producto; y una restricción limita el espacio de solución (tecnología, normativa, plazo o proceso). La dimensión producto/proceso distingue las propiedades del artefacto entregable de las obligaciones sobre cómo se desarrolla. La dimensión sistema/software distingue el alcance global (organización, hardware, personas y proceso) del alcance del componente de software.
+
+Los requisitos de calidad se clasifican con el modelo de producto de ISO/IEC 25010:2023 \cite{iso25010}, que organiza la calidad en nueve características: adecuación funcional, eficiencia de desempeño, compatibilidad, capacidad de interacción, fiabilidad, seguridad, mantenibilidad, flexibilidad y seguridad física (safety). En esta edición, la capacidad de interacción y la flexibilidad sustituyen a la usabilidad y la portabilidad de la edición de 2011, y se incorpora la seguridad física. Las subcaracterísticas utilizadas en este taller son comportamiento temporal, confidencialidad, integridad, inclusividad, disponibilidad, recuperabilidad, tolerancia a fallos e interoperabilidad.
+
+\section{Clasificación de los 20 enunciados}
+
+Las Tablas~\ref{tab:clasif1} y~\ref{tab:clasif2} presentan la clasificación. Las columnas \emph{Prod.}/\emph{Proc.} y \emph{Sist.}/\emph{Soft.} indican, respectivamente, si el requisito es de producto o de proceso y si su alcance es de sistema o de software. En la columna ISO/IEC 25010:2023 se indica la característica y la subcaracterística solo cuando el enunciado es de calidad.
+
+\subsection*{Tabla 1. Enunciados E01--E10}
+
+\begin{longtable}{@{}p{0.85cm}p{4.35cm}p{1.8cm}p{2.45cm}p{1.15cm}p{1.15cm}p{3.3cm}@{}}
+\caption{Clasificación de los enunciados E01--E10.}\label{tab:clasif1}\\
+\toprule
+\textbf{Cód.} & \textbf{Enunciado} & \textbf{Tipo} & \textbf{ISO/IEC 25010:2023} & \textbf{Prod.\newline Proc.} & \textbf{Sist.\newline Soft.} & \textbf{Justificación} \\
+\midrule
+\endfirsthead
+\multicolumn{7}{@{}l}{\small\textit{Continuación de la Tabla~\ref{tab:clasif1}}}\\
+\toprule
+\textbf{Cód.} & \textbf{Enunciado} & \textbf{Tipo} & \textbf{ISO/IEC 25010:2023} & \textbf{Prod.\newline Proc.} & \textbf{Sist.\newline Soft.} & \textbf{Justificación} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\bottomrule
+\endlastfoot
+E01 & El paciente podrá reservar una cita eligiendo especialidad, médico, fecha y hora entre los horarios disponibles. & Funcional & --- & Prod. & Soft. & Describe una función observable que el software debe ejecutar. \\
+E02 & La plataforma enviará al paciente un recordatorio por mensaje de texto 24 horas antes de su cita. & Funcional & --- & Prod. & Soft. & Especifica un comportamiento del sistema: el envío programado del recordatorio. \\
+E03 & La aplicación debe ser rápida. & Calidad & Eficiencia de desempeño (comportamiento temporal) & Prod. & Soft. & Expresa una propiedad de calidad sin métrica; se cuantifica en la Sección~\ref{sec:cuant}. \\
+E04 & El recepcionista podrá registrar la llegada del paciente que se acerque a la ventanilla. & Funcional & --- & Prod. & Soft. & Función de registro de llegada que ejecuta el software. \\
+E05 & La plataforma se desarrollará en Java 21 con base de datos PostgreSQL, tecnologías que domina el área de TI. & Restricción & --- & Prod. & Soft. & Impone una tecnología concreta al producto y limita el espacio de solución. \\
+E06 & El médico podrá consultar la lista de pacientes del día y marcar cada consulta como atendida. & Funcional & --- & Prod. & Soft. & Función de consulta y actualización del estado de la consulta. \\
+E07 & Los datos de salud de los pacientes deben estar seguros. & Calidad & Seguridad (confidencialidad e integridad) & Prod. & Soft. & Propiedad de calidad sin umbral; se cuantifica en la Sección~\ref{sec:cuant}. \\
+E08 & La aplicación móvil debe funcionar en teléfonos con Android 10 o superior. & Restricción & --- & Prod. & Soft. & Delimita la plataforma soportada; es una restricción técnica, no una función. \\
+E09 & Una cita cancelada con menos de cuatro horas de anticipación se registrará como inasistencia. & Funcional & --- & Prod. & Soft. & Regla de negocio que el software debe ejecutar de forma verificable. \\
+E10 & La plataforma debe ser fácil de usar para los pacientes adultos mayores. & Calidad & Capacidad de interacción (inclusividad) & Prod. & Soft. & Propiedad de interacción sin métrica; se cuantifica en la Sección~\ref{sec:cuant}. \\
+\end{longtable}
+
+\subsection*{Tabla 2. Enunciados E11--E20}
+
+\begin{longtable}{@{}p{0.85cm}p{4.35cm}p{1.8cm}p{2.45cm}p{1.15cm}p{1.15cm}p{3.3cm}@{}}
+\caption{Clasificación de los enunciados E11--E20.}\label{tab:clasif2}\\
+\toprule
+\textbf{Cód.} & \textbf{Enunciado} & \textbf{Tipo} & \textbf{ISO/IEC 25010:2023} & \textbf{Prod.\newline Proc.} & \textbf{Sist.\newline Soft.} & \textbf{Justificación} \\
+\midrule
+\endfirsthead
+\multicolumn{7}{@{}l}{\small\textit{Continuación de la Tabla~\ref{tab:clasif2}}}\\
+\toprule
+\textbf{Cód.} & \textbf{Enunciado} & \textbf{Tipo} & \textbf{ISO/IEC 25010:2023} & \textbf{Prod.\newline Proc.} & \textbf{Sist.\newline Soft.} & \textbf{Justificación} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\bottomrule
+\endlastfoot
+E11 & El proyecto debe entregarse en un plazo máximo de seis meses. & Restricción & --- & Proc. & Sist. & Impone un plazo al proceso del proyecto, no al producto. \\
+E12 & La sesión de un usuario se cerrará automáticamente tras 10 minutos sin actividad. & Funcional & --- & Prod. & Soft. & Comportamiento concreto y verificable del software. \\
+E13 & El quiosco de la sala de espera leerá el número de cédula ingresado en su pantalla táctil e imprimirá un ticket con el número de turno. & Funcional & --- & Prod. & Soft. & Función del quiosco que ejecuta el software. \\
+E14 & La plataforma debe estar siempre disponible. & Calidad & Fiabilidad (disponibilidad) & Prod. & Soft. & Propiedad de fiabilidad sin umbral; se cuantifica en la Sección~\ref{sec:cuant}. \\
+E15 & El director médico podrá generar un reporte mensual de inasistencias por especialidad. & Funcional & --- & Prod. & Soft. & Función de generación de reportes. \\
+E16 & Cada incremento se validará con el director médico al final de cada iteración de dos semanas. & Restricción & --- & Proc. & Sist. & Impone una actividad de validación al proceso de desarrollo. \\
+E17 & El tratamiento de los datos personales de los pacientes debe cumplir la Ley Orgánica de Protección de Datos Personales del Ecuador. & Restricción & --- & Prod. & Soft. & Obligación legal que restringe el tratamiento de datos del producto. \\
+E18 & La plataforma debe integrarse sin problemas con el sistema de facturación actual. & Calidad & Compatibilidad (interoperabilidad) & Prod. & Soft. & Propiedad de interoperabilidad sin métrica; se cuantifica en la Sección~\ref{sec:cuant}. \\
+E19 & Si el servidor principal falla, la plataforma deberá restablecer el servicio en menos de 30 minutos sin perder ninguna cita confirmada. & Calidad & Fiabilidad (recuperabilidad y tolerancia a fallos) & Prod. & Soft. & Requisito de fiabilidad ya cuantificado: 30 minutos y cero pérdida de citas. \\
+E20 & Todo cambio en el código fuente será revisado por otro integrante del equipo antes de integrarse a la rama principal. & Restricción & --- & Proc. & Sist. & Impone una práctica al proceso de desarrollo: la revisión por pares. \\
+\end{longtable}
+
+\noindent\emph{Leyenda:} Prod.~=~producto; Proc.~=~proceso; Sist.~=~sistema; Soft.~=~software.
+
+\section{Cuantificación de los cinco requisitos de calidad}\label{sec:cuant}
+
+Se identificaron cinco requisitos de calidad vagos: E03, E07, E10, E14 y E18. Para cada uno se define una métrica, una unidad y un umbral verificable, usando los datos del caso: 300 usuarios concurrentes en el pico, 450 citas diarias, 12\,000 pacientes, 35\,\% de pacientes mayores de 60 años, horario de atención de lunes a sábado de 07:00 a 19:00 y plazo de seis meses.
+
+\subsection{R01 (E03) --- Eficiencia de desempeño / comportamiento temporal}
+
+\textbf{Enunciado original (vago):} «La aplicación debe ser rápida» (E03).
+
+\textbf{Requisito cuantificado:} con 300 usuarios concurrentes, el 95\,\% de las solicitudes de consulta de disponibilidad y de reserva debe completarse en un tiempo de respuesta menor o igual a 2 s (percentil 95), y el percentil 99 no debe superar 5 s, medido en la franja de mayor demanda (lunes de 07:00 a 09:00).
+
+\textbf{Métrica, unidad y umbral:} tiempo de respuesta en segundos; p95~$\leq$~2 s y p99~$\leq$~5 s con 300 usuarios concurrentes.
+
+\textbf{Verificación:} prueba de carga con 300 usuarios virtuales en el horario pico; se registran los percentiles 95 y 99 y se acepta el requisito solo si ambos umbrales se cumplen.
+
+\subsection{R02 (E07) --- Seguridad / confidencialidad e integridad}
+
+\textbf{Enunciado original (vago):} «Los datos de salud de los pacientes deben estar seguros» (E07).
+
+\textbf{Requisito cuantificado:} el 100\,\% de los datos de salud debe cifrarse en reposo con AES-256 y en tránsito con TLS 1.2 o superior; el 100\,\% de los accesos a datos clínicos debe registrarse en una bitácora con usuario, fecha, hora y acción; y una auditoría de seguridad no debe reportar hallazgos críticos ni altos.
+
+\textbf{Métrica, unidad y umbral:} porcentaje de datos cifrados (100\,\%), porcentaje de accesos auditados (100\,\%) y número de hallazgos críticos o altos (0).
+
+\textbf{Verificación:} revisión de configuración de cifrado, prueba de penetración y muestreo de la bitácora de accesos.
+
+\subsection{R03 (E10) --- Capacidad de interacción / inclusividad}
+
+\textbf{Enunciado original (vago):} «La plataforma debe ser fácil de usar para los pacientes adultos mayores» (E10).
+
+\textbf{Requisito cuantificado:} al menos el 90\,\% de los pacientes mayores de 60 años debe completar la reserva de una cita sin ayuda en 3 minutos o menos en la primera prueba de usabilidad, con una tasa de error menor o igual al 5\,\% y un tamaño de letra mínimo equivalente a 16 px.
+
+\textbf{Métrica, unidad y umbral:} tasa de éxito en la tarea ($\geq$~90\,\%), tiempo de tarea ($\leq$~3 min), tasa de error ($\leq$~5\,\%) y tamaño de letra ($\geq$~16 px).
+
+\textbf{Verificación:} prueba de usabilidad con al menos 15 participantes del grupo etario, que representa cerca de 4\,200 de los 12\,000 pacientes registrados (35\,\%).
+
+\subsection{R04 (E14) --- Fiabilidad / disponibilidad}
+
+\textbf{Enunciado original (vago):} «La plataforma debe estar siempre disponible» (E14).
+
+\textbf{Requisito cuantificado:} la plataforma debe estar disponible al menos el 99,5\,\% del horario de atención (lunes a sábado, 07:00--19:00; 72 h semanales), lo que equivale a un máximo de 21,6 min de indisponibilidad por semana, y debe recuperarse en 30 minutos o menos tras una falla del servidor principal sin perder citas confirmadas.
+
+\textbf{Métrica, unidad y umbral:} porcentaje de disponibilidad ($\geq$~99,5\,\%), minutos de indisponibilidad por semana ($\leq$~21,6 min) y tiempo de recuperación ($\leq$~30 min).
+
+\textbf{Verificación:} monitoreo continuo del servicio durante el horario de atención y simulación de falla del servidor principal.
+
+\subsection{R05 (E18) --- Compatibilidad / interoperabilidad}
+
+\textbf{Enunciado original (vago):} «La plataforma debe integrarse sin problemas con el sistema de facturación actual» (E18).
+
+\textbf{Requisito cuantificado:} la tasa de éxito del registro de citas atendidas en el sistema de facturación, a través de su API, debe ser mayor o igual al 99,5\,\%, con una latencia menor o igual a 5 s y cero duplicados; los reintentos automáticos deben resolver al menos el 99\,\% de los fallos transitorios en un máximo de 3 intentos.
+
+\textbf{Métrica, unidad y umbral:} tasa de éxito ($\geq$~99,5\,\%), latencia ($\leq$~5 s), duplicados (0) y tasa de recuperación de fallos transitorios ($\geq$~99\,\% en $\leq$~3 intentos).
+
+\textbf{Verificación:} pruebas de integración con el entorno de pruebas del proveedor y conciliación diaria entre las citas atendidas y los registros de facturación.
+
+\section{Discrepancias con el compañero y resolución}
+
+La comparación con un compañero se centró en los enunciados con mayor ambigüedad de tipo. La Tabla~\ref{tab:discrepancias} recoge las discrepancias y la resolución acordada.
+
+\begin{longtable}{@{}p{0.8cm}p{3.7cm}p{3.5cm}p{3.5cm}p{4.0cm}@{}}
+\caption{Discrepancias de clasificación y su resolución.}\label{tab:discrepancias}\\
+\toprule
+\textbf{Cód.} & \textbf{Punto de debate} & \textbf{Postura A} & \textbf{Postura B} & \textbf{Resolución y argumento} \\
+\midrule
+\endfirsthead
+\multicolumn{5}{@{}l}{\small\textit{Continuación de la Tabla~\ref{tab:discrepancias}}}\\
+\toprule
+\textbf{Cód.} & \textbf{Punto de debate} & \textbf{Postura A} & \textbf{Postura B} & \textbf{Resolución y argumento} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\bottomrule
+\endlastfoot
+E05 & ¿Restricción de producto o de proceso? & Restricción de producto: fija la tecnología del software entregable. & Restricción de proceso: condiciona cómo se construye. & Se acordó \emph{producto}, porque la tecnología es una propiedad del artefacto; el efecto sobre el proceso es derivado. \\
+E08 & ¿Restricción o requisito de compatibilidad? & Restricción de plataforma: fija el entorno soportado. & Calidad de compatibilidad (adaptabilidad). & Se acordó \emph{restricción}, porque no fija un nivel de desempeño medible; si se exigiera rendimiento en esos equipos, sería un requisito de calidad cuantificado. \\
+E09 & ¿Funcional o restricción de negocio? & Funcional: el software debe ejecutar la regla. & Restricción: proviene de una política de la organización. & Se acordó \emph{funcional}, porque describe comportamiento verificable; la regla de negocio es la fuente, no el tipo. \\
+E12 & ¿Funcional o calidad de seguridad? & Funcional: el cierre de sesión es un comportamiento observable. & Calidad de seguridad (autenticidad). & Se acordó \emph{funcional}, porque el enunciado fija un comportamiento concreto; la seguridad es la motivación. \\
+E17 & ¿Restricción legal o calidad de seguridad? & Restricción: impone una obligación externa. & Calidad de seguridad. & Se acordó \emph{restricción}, porque la ley limita el espacio de solución; la seguridad es la característica con la que se verifica su cumplimiento. \\
+E19 & ¿Calidad o restricción de operación? & Calidad de fiabilidad (recuperabilidad). & Restricción operativa. & Se acordó \emph{calidad}, porque expresa un nivel de servicio medible: 30 minutos y cero pérdida de citas. \\
+\end{longtable}
+
+\section{Conclusiones}
+
+La clasificación muestra que la mayoría de los enunciados son requisitos funcionales de producto y de software. Las restricciones se concentran en el proceso (E11, E16, E20), en la tecnología (E05, E08) y en la normativa (E17). Los cinco requisitos de calidad vagos pudieron transformarse en requisitos verificables al fijar métrica, unidad y umbral; sin ese paso, expresiones como «rápida» o «segura» no permiten diseñar pruebas de aceptación. La comparación con el compañero evidenció que la frontera entre requisito funcional y restricción depende de si el enunciado describe comportamiento observable o limita el espacio de solución.
+
+\section{Declaración de uso de herramientas de inteligencia artificial}
+
+Para la elaboración de este documento se utilizó un asistente de inteligencia artificial como apoyo en la estructuración del texto y en la revisión de formato. Las clasificaciones, cuantificaciones y discrepancias fueron revisadas y contrastadas por el estudiante con el caso y con ISO/IEC 25010:2023. El estudiante asume la autoría y la responsabilidad del contenido.
+
+\begin{thebibliography}{9}
+
+\bibitem{pohl2025} K. Pohl, \emph{Requirements Engineering: Fundamentals, Principles, and Techniques}, 2nd ed. Berlin, Heidelberg, Germany: Springer, 2025. ISBN 978-3-662-69204-2.
+
+\bibitem{iso29148} ISO/IEC/IEEE, \emph{ISO/IEC/IEEE 29148:2018. Systems and software engineering --- Life cycle processes --- Requirements engineering}. Geneva, Switzerland: International Organization for Standardization, 2018.
+
+\bibitem{iso25010} ISO/IEC, \emph{ISO/IEC 25010:2023. Systems and software engineering --- Systems and software quality requirements and evaluation (SQuaRE) --- Product quality model}. Geneva, Switzerland: International Organization for Standardization, 2023.
+
+\bibitem{lopdp} Asamblea Nacional del Ecuador, ``Ley Orgánica de Protección de Datos Personales,'' \emph{Registro Oficial}, Quinto Suplemento No. 459, 26 de mayo de 2021.
+
+\bibitem{acm} Association for Computing Machinery, ``ACM Code of Ethics and Professional Conduct,'' 2018. [En línea]. Disponible: \url{https://www.acm.org/code-of-ethics}. [Consultado: 27 de octubre de 2026].
+
+\end{thebibliography}
+
+\end{document}
