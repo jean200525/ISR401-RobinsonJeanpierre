@@ -1,6 +1,6 @@
 # Formato de los datos de TA-IND-02
 
-`kano_respuestas.csv` ya contiene las 40 filas transcritas de los cinco cuestionarios corregidos `P1`–`P5`; sus huellas están en `../evidencias/MANIFIESTO.md`. `moscow.csv` contiene los 20 requisitos entregados por el autor (12 funcionales y 8 de calidad) con MoSCoW en `M`/`S`/`C`/`W`. `votacion.csv` contiene 60 filas (3 votantes x 20 requisitos), transcritas de `Votacion_1.pdf` a `Votacion_3.pdf`; el autor confirmó bajar `R20` de 3 a 2 en `V1` y `R16` de 4 a 3 en `V3` para que cada boleta sume 100. La IA solo preparó las plantillas, transcribió los datos y escribió los scripts; no generó participantes, respuestas, requisitos ni votos.
+`kano_respuestas.csv` ya contiene las 40 filas transcritas de los cinco cuestionarios corregidos `P1`–`P5`; sus huellas están en `../evidencias/MANIFIESTO.md`. `moscow.csv` contiene los 20 requisitos entregados por el autor (12 funcionales y 8 de calidad) con MoSCoW en `M`/`S`/`C`/`W`. `votacion.csv` contiene 60 filas (3 votantes x 20 requisitos), transcritas de `Votacion_1.pdf` a `Votacion_3.pdf`. El asistente bajó `R20` de 3 a 2 en `V1` y `R16` de 4 a 3 en `V3` por confirmación de chat; **eso no es una corrección hecha por cada votante en su boleta**, por lo que el archivo está **no validado** hasta que se reciban las boletas corregidas y fechadas por `V1` y `V3`. La IA solo preparó las plantillas, transcribió los datos y escribió los scripts; no generó participantes, respuestas, requisitos ni votos.
 
 ## Códigos
 
@@ -13,7 +13,7 @@
 - `kano_caracteristicas.csv`: 8 características Kano con pregunta funcional y disfuncional, enlazadas a `R01`–`R20` por correspondencia literal de sus enunciados.
 - `kano_respuestas.csv`: una fila por participante y característica (`5 × 8 = 40` pares, 80 respuestas), transcrita de los PDF corregidos. Columnas: `participante,caracteristica,respuesta_funcional,respuesta_disfuncional`. Las etiquetas son las literales de las opciones: `me gusta`, `espero que sea así`, `me resulta indiferente`, `puedo aceptarlo`, `no me gusta`.
 - `moscow.csv`: 20 filas, una por requisito. Columnas: `requisito,tipo,enunciado,criterio_verificacion,horas,moscow,justificacion`. MoSCoW usa `M`, `S`, `C` o `W` (11 `M`/66 h, 7 `S`/40 h, 1 `C`/4 h, 1 `W`/4 h). `R09` bajó a `S` y `R12` pasó a `W` para que los Must no superen el 60 % del esfuerzo y para dejar constancia de lo que queda fuera de la versión 1.
-- `votacion.csv`: 20 filas por votante, con enteros no negativos. Cada votante suma exactamente 100 después de las dos correcciones confirmadas por el autor.
+- `votacion.csv`: 20 filas por votante, con enteros no negativos. Cada votante suma exactamente 100 después de dos cambios aplicados por el asistente; **no validado** hasta que cada votante corrija su propia boleta con fecha real.
 - `.gitattributes` conserva los CSV con saltos LF para que las huellas SHA-256 sean reproducibles.
 
 ## Scripts
