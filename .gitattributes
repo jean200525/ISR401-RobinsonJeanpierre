@@ -1,0 +1,2 @@
+# Conservar los CSV con saltos LF para que futuras huellas SHA-256 sean reproducibles.
+*.csv text eol=lf
