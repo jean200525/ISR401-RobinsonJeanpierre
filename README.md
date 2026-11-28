@@ -14,6 +14,9 @@ Repositorio personal de la asignatura **Ingeniería de Requerimientos (ISR-401)*
 | `TA-IND-01/main.tex` | Fuente LaTeX de la actividad TA-IND-01. |
 | `TA-IND-01/main.pdf` | PDF compilado de TA-IND-01. |
 | `TA-IND-02/main.tex` | Fuente LaTeX del informe de priorización de requisitos, con las siete secciones redactadas. |
+| `TA-IND-02/main.pdf` | PDF compilado del informe de priorización de requisitos. |
+| `TA-IND-02/entrega-sga.tex` | Fuente del PDF de una sola página para el SGA de TA-IND-02. |
+| `TA-IND-02/entrega-sga.pdf` | PDF de una sola página con los datos informativos y la URL del repositorio. |
 | `TA-IND-02/secciones/` | Tablas LaTeX generadas desde los CSV reales de requisitos y Kano. |
 | `TA-IND-02/referencias.bib` | Entradas bibliográficas verificadas en formato BibTeX, estilo IEEE. |
 | `TA-IND-02/formatos/boleta_votacion_R01-R20.pdf` | Boleta con los 20 enunciados finales y puntos en blanco para `V1`–`V3`. |
@@ -54,7 +57,15 @@ pdflatex datos_informativos.tex
 pdflatex datos_informativos.tex
 ```
 
-El resultado es `SGA/datos_informativos.pdf`, que debe tener **una sola página**.
+El resultado es `SGA/datos_informativos.pdf`, que debe tener **una sola página**. Para TA-IND-02 se usa además `TA-IND-02/entrega-sga.tex`:
+
+```bash
+cd TA-IND-02
+pdflatex entrega-sga.tex
+pdflatex entrega-sga.tex
+```
+
+El resultado es `TA-IND-02/entrega-sga.pdf`, también de una sola página, con la URL del repositorio en una sola línea.
 
 ## Compilación de TA-IND-02
 
