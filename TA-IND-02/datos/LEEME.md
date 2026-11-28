@@ -12,7 +12,7 @@
 
 - `kano_caracteristicas.csv`: 8 características Kano con pregunta funcional y disfuncional, enlazadas a `R01`–`R20` por correspondencia literal de sus enunciados.
 - `kano_respuestas.csv`: una fila por participante y característica (`5 × 8 = 40` pares, 80 respuestas), transcrita de los PDF corregidos. Columnas: `participante,caracteristica,respuesta_funcional,respuesta_disfuncional`. Las etiquetas son las literales de las opciones: `me gusta`, `espero que sea así`, `me resulta indiferente`, `puedo aceptarlo`, `no me gusta`.
-- `moscow.csv`: 20 filas, una por requisito. Columnas: `requisito,tipo,enunciado,criterio_verificacion,horas,moscow,justificacion`. MoSCoW usa `M`, `S`, `C` o `W` (12 `M`, 6 `S`, 2 `C`).
+- `moscow.csv`: 20 filas, una por requisito. Columnas: `requisito,tipo,enunciado,criterio_verificacion,horas,moscow,justificacion`. MoSCoW usa `M`, `S`, `C` o `W` (11 `M`/66 h, 7 `S`/40 h, 1 `C`/4 h, 1 `W`/4 h). `R09` bajó a `S` y `R12` pasó a `W` para que los Must no superen el 60 % del esfuerzo y para dejar constancia de lo que queda fuera de la versión 1.
 - `votacion.csv`: 20 filas por votante, con enteros no negativos. Cada votante debe sumar exactamente 100.
 - `.gitattributes` conserva los CSV con saltos LF para que las huellas SHA-256 sean reproducibles.
 
