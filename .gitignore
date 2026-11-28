@@ -21,3 +21,7 @@ desktop.ini
 
 *.bcf
 *.run.xml
+
+# Evidencia privada: no subir originales, audios, fotos ni firmas.
+TA-IND-02/evidencias/*
+!TA-IND-02/evidencias/MANIFIESTO.md
