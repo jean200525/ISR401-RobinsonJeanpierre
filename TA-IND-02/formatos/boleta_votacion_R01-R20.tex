@@ -1,0 +1,55 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[spanish]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage[hidelinks]{hyperref}
+\title{\textbf{BOLETA DE VOTACI\'{O}N PONDERADA}}
+\author{TA-IND-02 -- Cl\'{i}nica veterinaria\\
+Estudiante: Jeanpierre Robinson Espinoza}
+\date{}
+\begin{document}
+\maketitle
+
+\noindent Votante: C\'{o}digo \rule{2.2cm}{0.4pt}\quad Fecha: \rule{2.2cm}{0.4pt}
+
+\noindent Distribuya \textbf{exactamente 100 puntos} entre los veinte requisitos. Use n\'{u}meros enteros no negativos. No escriba nombres.
+
+\vspace{0.3cm}
+
+\begin{longtable}{@{}lp{13.5cm}r@{}}
+\toprule
+ID & Enunciado & Puntos \\
+\midrule
+\endhead
+R01 & El sistema deberá permitir registrar cada mascota con un código único y los campos obligatorios nombre, especie y propietario; además podrá guardar raza, sexo, edad, peso y señas particulares. & \\
+R02 & El sistema deberá permitir registrar los datos de contacto del propietario, al menos nombre y teléfono, asociados a una o varias mascotas. & \\
+R03 & El sistema deberá permitir registrar antecedentes, alergias y enfermedades previas de cada mascota. & \\
+R04 & El sistema deberá permitir registrar cada consulta con los seis campos definidos: fecha, motivo, síntomas, diagnóstico, tratamiento y observaciones del veterinario. & \\
+R05 & El sistema deberá mostrar en orden cronológico todas las consultas anteriores de una mascota. & \\
+R06 & El sistema deberá permitir registrar las vacunas aplicadas a cada mascota, indicando tipo de vacuna, fecha de aplicación y responsable. & \\
+R07 & El sistema deberá permitir registrar la fecha de la próxima dosis o del siguiente control de vacunación. & \\
+R08 & El sistema deberá mostrar al personal de la clínica un aviso visible al menos 3 días antes de la fecha programada de vacunación, cuando exista una próxima dosis registrada. & \\
+R09 & El sistema deberá mostrar una lista de mascotas cuya fecha de vacunación sea igual o anterior a los 7 días siguientes, para planificar los controles de la semana. & \\
+R10 & El sistema deberá permitir buscar mascotas por nombre, código de paciente o teléfono del propietario. & \\
+R11 & El sistema deberá gestionar citas veterinarias registrando fecha, hora, mascota y motivo de atención en un único registro consultable. & \\
+R12 & El sistema deberá registrar el seguimiento complementario de cada mascota (desparasitación y control de peso) como eventos fechados con observación. & \\
+R13 & El sistema deberá restringir la creación, modificación y eliminación de historias clínicas según el rol del usuario. & \\
+R14 & El sistema deberá garantizar la trazabilidad de las modificaciones de historias clínicas, registrando el usuario responsable y la fecha y hora de cada cambio. & \\
+R15 & El sistema deberá mantener la integridad de los registros evitando duplicados por código de mascota o por coincidencia de nombre, especie y teléfono del propietario. & \\
+R16 & El sistema deberá permitir consultar una ficha clínica en máximo 3 segundos en el 95 \% de los casos, con hasta 1.000 mascotas registradas y conexión estable. & \\
+R17 & El sistema deberá realizar al menos una copia de seguridad diaria de la información clínica y permitir recuperar los datos respaldados en máximo 4 horas. & \\
+R18 & El sistema deberá permitir que al menos 4 de cada 5 usuarios del personal completen el registro y la búsqueda de una mascota en máximo 3 minutos, sin asistencia, en una prueba de uso. & \\
+R19 & El sistema deberá mantener la portabilidad del historial clínico, permitiendo exportarlo o imprimirlo con datos completos y legibles para entregarlo al propietario o compartirlo con otro profesional. & \\
+R20 & El sistema deberá mantener disponibles los registros durante el horario de atención definido y configurable por la clínica, con al menos 99 \% mensual. & \\
+\midrule
+ & \textbf{Total} & \textbf{100} \\
+\bottomrule
+\end{longtable}
+
+\noindent Comprobaci\'{o}n: la suma de los veinte valores debe ser 100. Si no lo es, corrija sus propios valores.
+\end{document}
+

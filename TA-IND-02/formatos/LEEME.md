@@ -4,6 +4,8 @@ Los archivos de esta carpeta son plantillas vacías. El autor las aplica a las p
 
 - `entrevista_ta_ind_02.pdf`: 20 preguntas de entrevista sobre el funcionamiento actual y el sistema propuesto.
 - `cuestionario_kano_ta_ind_02.pdf`: 8 características con su pregunta funcional y disfuncional.
+- `boleta_votacion_R01-R20.pdf`: los 20 enunciados finales con la columna de puntos en blanco, para que `V1`–`V3` voten sobre el texto definitivo.
+- `boleta_votacion_para_llenar.pdf`: plantilla anterior en blanco, sin enunciados; se conserva como instrumento inicial.
 - Códigos acordados: `P1`–`P5` para Kano y `V1`–`V3` para votación, según el consentimiento `TA-IND-02-CONS`.
 - Opciones Kano: A = Me gusta, B = Espero que sea así, C = Me resulta indiferente, D = Puedo aceptarlo, E = No me gusta.
 

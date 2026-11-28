@@ -13,8 +13,10 @@ Repositorio personal de la asignatura **Ingeniería de Requerimientos (ISR-401)*
 | `SGA/datos_informativos.pdf` | PDF de una sola página con los datos informativos y la URL del repositorio. |
 | `TA-IND-01/main.tex` | Fuente LaTeX de la actividad TA-IND-01. |
 | `TA-IND-01/main.pdf` | PDF compilado de TA-IND-01. |
-| `TA-IND-02/main.tex` | Fuente LaTeX del informe de priorización de requisitos. |
-| `TA-IND-02/referencias.bib` | Entradas bibliográficas en formato BibTeX, estilo IEEE. |
+| `TA-IND-02/main.tex` | Fuente LaTeX del informe de priorización de requisitos, con las siete secciones redactadas. |
+| `TA-IND-02/secciones/` | Tablas LaTeX generadas desde los CSV reales de requisitos y Kano. |
+| `TA-IND-02/referencias.bib` | Entradas bibliográficas verificadas en formato BibTeX, estilo IEEE. |
+| `TA-IND-02/formatos/boleta_votacion_R01-R20.pdf` | Boleta con los 20 enunciados finales y puntos en blanco para `V1`–`V3`. |
 | `TA-IND-02/formatos/` | Instrumentos en blanco: entrevista, cuestionario Kano y boleta de votación. |
 | `TA-IND-02/datos/LEEME.md` | Formato de los CSV, códigos de participantes y uso de los scripts. |
 | `TA-IND-02/datos/clasificar_kano.py` | Clasificación de respuestas Kano con la tabla de evaluación. |
