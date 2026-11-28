@@ -1,12 +1,12 @@
 # Formato de los datos de TA-IND-02
 
-`kano_respuestas.csv` ya contiene las 40 filas transcritas de los cinco cuestionarios corregidos `P1`–`P5`; sus huellas están en `../evidencias/MANIFIESTO.md`. `moscow.csv` contiene los 20 requisitos entregados por el autor (12 funcionales y 8 de calidad) con MoSCoW en `M`/`S`/`C`/`W`. `votacion.csv` contiene 60 filas (3 votantes x 20 requisitos), transcritas de `Votacion_1.pdf` a `Votacion_3.pdf`. El asistente bajó inicialmente `R20` de 3 a 2 en `V1` y `R16` de 4 a 3 en `V3` por confirmación de chat; después `V1` y `V3` declararon por separado cada corrección con fecha `27/11/2026` y se recibieron boletas corregidas con esa fecha. El archivo quedó **validado** con esos valores; la secuencia se documenta en `../evidencias/MANIFIESTO.md`. La IA solo preparó las plantillas, transcribió los datos y escribió los scripts; no generó participantes, respuestas, requisitos ni votos.
+`kano_respuestas.csv` ya contiene las 40 filas transcritas de los cinco cuestionarios corregidos `P1`–`P5`; sus huellas están en `../evidencias/MANIFIESTO.md`. `moscow.csv` contiene los 20 requisitos entregados por el autor (12 funcionales y 8 de calidad) con MoSCoW en `M`/`S`/`C`/`W`; los enunciados de `R12`, `R13`, `R14` y `R19` se refinaron para eliminar contradicciones y requisitos compuestos, sin cambiar IDs, tipos, horas ni clases. `votacion.csv` contiene 60 filas (3 votantes x 20 requisitos), transcritas de las boletas conservadas como imagen `V1.jpeg` a `V3.jpeg`. El asistente bajó inicialmente `R20` de 3 a 2 en `V1` y `R16` de 4 a 3 en `V3` por confirmación de chat; después `V1` y `V3` declararon por separado cada corrección con fecha `27/11/2026` y se recibieron boletas corregidas con esa fecha. El archivo quedó **validado** con esos valores; la secuencia se documenta en `../evidencias/MANIFIESTO.md`. La IA solo preparó las plantillas, adaptó esquemas, transcribió datos y escribió los scripts; no generó participantes, respuestas, requisitos ni votos.
 
 ## Códigos
 
 - Cuestionario Kano y entrevista: `P1`–`P5`, según el consentimiento `TA-IND-02-CONS`.
 - Votación ponderada: `V1`–`V3`, según el mismo consentimiento.
-- Los ocho consentimientos firmados se custodian fuera del repositorio; en el manifiesto solo se publican código, fecha y SHA-256, sin nombres ni cédulas.
+- Los ocho consentimientos manuscritos se custodian en la carpeta institucional privada `@uteq.edu.ec`, compartida con el docente; en el manifiesto solo se publican código, perfil genérico, fecha y SHA-256, sin nombres ni cédulas.
 
 ## Archivos
 

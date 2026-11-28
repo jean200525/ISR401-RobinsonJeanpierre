@@ -8,20 +8,17 @@ function Esc($s) {
 }
 
 $filas = Import-Csv $csv -Encoding UTF8
-$lineas = @(
-  '\textbf{Requisitos formulados: 20 en total, 12 funcionales y 8 de calidad. F = funcional, Q = calidad; M = Must, S = Should, C = Could, W = Won''t.}\\',
-  '',
+$cabecera = @(
   '\footnotesize',
   '\begin{longtable}{@{}p{0.9cm}@{\hspace{0.15cm}}p{0.7cm}@{\hspace{0.15cm}}p{4.2cm}@{\hspace{0.15cm}}p{0.6cm}@{\hspace{0.15cm}}p{0.6cm}@{\hspace{0.15cm}}p{3.7cm}@{\hspace{0.15cm}}p{4.0cm}@{}}',
+  '\caption{Lista final de los 20 requisitos con ID, tipo, clase MoSCoW, horas, justificación y criterio verificable.}\\',
   '\toprule',
   'ID & Tipo & Enunciado & M & h & Justificacion & Criterio \\',
   '\midrule',
   '\endhead',
   '\bottomrule',
-  '\endlastfoot',
-  '\end{longtable}'
+  '\endlastfoot'
 )
-# Se inserta el cuerpo antes de \bottomrule.
 $cuerpo = @()
 foreach ($f in $filas) {
   $tipo = if ($f.tipo -like 'Calidad*') { 'Q' } else { 'F' }
@@ -29,6 +26,6 @@ foreach ($f in $filas) {
     (Esc $f.requisito), $tipo, (Esc $f.enunciado), `
     (Esc $f.moscow), (Esc $f.horas), (Esc $f.justificacion), (Esc $f.criterio_verificacion)
 }
-$lineas = $lineas[0..9] + $cuerpo + $lineas[10..($lineas.Count - 1)]
+$lineas = $cabecera + $cuerpo + @('\end{longtable}', '\label{tab:requisitos}')
 [IO.File]::WriteAllText($out, (($lineas -join "`n") + "`n"), $utf8)
 "escrito: $out ($($cuerpo.Count) filas)"

@@ -1,59 +1,75 @@
-# Manifiesto de evidencia (sin datos personales)
+# Manifiesto de evidencia — TA-IND-02
 
-La carpeta `evidencias/` está ignorada por Git, salvo este archivo. Los originales se custodian fuera del repositorio; no se publican nombres, cédulas, correos, firmas, rostros, voces ni audios. Las duraciones y fechas no se estiman si no constan en el original.
+Los originales se custodian en la carpeta institucional privada `@uteq.edu.ec`, compartida con el docente responsable `gguerrero@uteq.edu.ec`. En el repositorio público solo se publican códigos, fechas y huellas SHA-256. No se publican nombres, cédulas, firmas, rostros, voces ni teléfonos. Las duraciones no se estiman si no constan en el original.
 
-| Código | Técnica | Archivo custodiado | Fecha | Duración | SHA-256 |
-|---|---|---|---|---|---|
-| --- | Consentimiento | `consentimiento_TA-IND-02.pdf` | 2026-11-27 (versión del documento) | No registrada | `A092B68DE048D5CD92E9F55AC0285BBAEE1747267FA359EE7A2DA8A8D3FD6007` |
-| --- | Paquete de originales | `Cuestionarios_veterinaria_P1-P5_corregidos.zip` | No consta en el original | No registrada | `462715D6B82422815CEE73B39CEB445921361564ABA2348C07973CE285AEAFF3` |
-| --- | Fuente de requisitos | `Downloads/moscow.csv` (original entregado) | 2026-11-28 (archivo entregado) | No aplica | `6B7482405C3D8F933738D135CF0E07A33DB87A8247A409508F67D46AA1F80A17` |
-| --- | Fuente de requisitos | `Downloads/moscow_requisitos.xlsx` (original entregado) | 2026-11-28 (archivo entregado) | No aplica | `E221E6F037EE5AB407A159699F749FA818D5A8ACA60E258EC719FED498D4EBC8` |
-| --- | Datos adaptados | `TA-IND-02/datos/moscow.csv` (versión corregida) | 2026-11-28 (revisión) | No aplica | `F2954660AC885804FB0469B363C1F03040BDB0A60469E94E4DAB62BA5435F424` |
-| P1 | Entrevista y Kano | `P1_entrevista_y_kano.pdf` | No consta en el original | No registrada | `B30BF9728DD9460FDB5B58AEC4E4FD793A281EB73BAD5E2616677E5ABE21A3FE` |
-| P2 | Entrevista y Kano | `P2_entrevista_y_kano.pdf` | No consta en el original | No registrada | `145060719CC97CDA42AC6A14064C1CA8BC76DBF2E7D33F54B1568299E2DC09D8` |
-| P3 | Entrevista y Kano | `P3_entrevista_y_kano.pdf` | No consta en el original | No registrada | `E418D76E5E7E6021EDADB6B777F1183ACE09A2BD308A178186F0DD08B9C2B294` |
-| P4 | Entrevista y Kano | `P4_entrevista_y_kano.pdf` | No consta en el original | No registrada | `48B110710A82F34C638A00E4810182EA5712B4729A03B5D9A75D58F1956939DB` |
-| P5 | Entrevista y Kano | `P5_entrevista_y_kano.pdf` | No consta en el original | No registrada | `CE63C7BCB4B1270D9C654F6276003262A49A398CBADDE5CC50B827D77A5D4B44` |
-| --- | Paquete de votación | `Downloads/Votaciones_1_a_3.pdf.zip` | 2026-11-28 (archivo entregado) | No aplica | `4A8511CCB3B7B649A952DDD07428A16E97CEE60477DA637F58E749ED203B1F1D` |
-| V1 | Votación ponderada | `Votacion_1.pdf` | No consta en el original | No registrada | `B60841A3C7036B522C832C8E138B75FDCCCAA4E3FAD6BA44FF9597793F4F8789` |
-| V2 | Votación ponderada | `Votacion_2.pdf` | No consta en el original | No registrada | `2559A0B88EF11C41501B21DB4BC34FC6BEDF1CCB363DABA5E14CA7A304502188` |
-| V3 | Votación ponderada | `Votacion_3.pdf` | No consta en el original | No registrada | `7B1BC967C1ED554328549EB55705449D486B5A62C6388D73DDD9C08191DDF630` |
-| P1 | Consentimiento firmado | `consentimiento_P1_TA-IND-02.pdf` (alias) | 2026-11-27 (impreso) | No aplica | `E03D146B17C113ED01955A0AFC3921C7D824B8AED4FC03B7726AB23042BAA98F` |
-| P2 | Consentimiento firmado | `consentimiento_P2_TA-IND-02.pdf` (alias) | 2026-11-27 (impreso) | No aplica | `B485F7C35E8B1EB9E04D81B8166471ADAE4507A7A246F3BA6AE62ABF0B30C3F8` |
-| P3 | Consentimiento firmado | `consentimiento_P3_TA-IND-02.pdf` (alias) | 2026-11-27 (impreso) | No aplica | `B6F1AF9EDB7EA5C462100ADB07791C4367E58443D97D70C1682CB31A0D7A12F1` |
-| P4 | Consentimiento firmado | `consentimiento_P4_TA-IND-02.pdf` (alias) | 2026-11-27 (impreso) | No aplica | `291B951AE538A62344272A7EA255F95BBD6DC1F85A5C84A10D6825520ACFCCEF` |
-| P5 | Consentimiento firmado | `consentimiento_P5_TA-IND-02.pdf` (alias) | 2026-11-27 (impreso) | No aplica | `D0C8E838B075342EEC9F6DB6B0060C0C05FCBAF84810293089DAE3DD202827B5` |
-| V1 | Consentimiento firmado | `consentimiento_V1_TA-IND-02.pdf` (alias) | 2026-11-27 (impreso) | No aplica | `B2EBDD79EA5C9D7215520596E53DB656F752070DDBA930101C00222616020726` |
-| V2 | Consentimiento firmado | `consentimiento_V2_TA-IND-02.pdf` (alias) | 2026-11-27 (impreso) | No aplica | `FD8D8F0F6362935381ECC65541CA21FA4657B6E455EDC41B9F94C358E429DF3C` |
-| V3 | Consentimiento firmado | `consentimiento_V3_TA-IND-02.pdf` (alias) | 2026-11-27 (impreso) | No aplica | `319E1B6DC265E3E5D84A99BAACB6906EE9608050C6DA746F06A8C7E20FC1597F` |
-| --- | Paquete de consentimientos | `Downloads/8_consentimientos_TA-IND-02 (1).zip` | 2026-11-28 (recibido) | No aplica | `969D75A40228BCD3CE77563987743F48E5AAA3FBC05AEEB4839E963BEAB6BBF5` |
-| --- | Paquete de boletas corregidas | `Downloads/Votaciones_1_a_3_corregido.zip` | 2026-11-28 (recibido) | No aplica | `8A2D184FF8D426EB000025AFD7D7F269E7C20342897A5440BDCB1F9A9EC20F33` |
-| V1 | Votación ponderada (versión corregida) | `Votacion_1_corregida.pdf` (alias) | No consta: campo `Fecha:` en blanco | No registrada | `DBF20D4A1D7A48131DD45228EB7D45BFE4607D74D0741B6B1053629ECF1BCD58` |
-| V2 | Votación ponderada (versión corregida) | `Votacion_2_corregida.pdf` (alias) | No consta: campo `Fecha:` en blanco | No registrada | `75578C8A89EAE7B0E31E2A96A4E5F76E97075D4CBAA8209A4376A9DB152D0C3F` |
-| V3 | Votación ponderada (versión corregida) | `Votacion_3_corregida.pdf` (alias) | No consta: campo `Fecha:` en blanco | No registrada | `600E0AC6DF4F826596FB7E305597BBDC72E26BD7433136D7322B20EA863B11AA` |
-| --- | Paquete de boletas con fecha | `Downloads/Votaciones_1_a_3_corregido_con_fecha.zip` | 2026-11-28 (recibido) | No aplica | `E64C0F2D749B45045EF8AF0C4694050CC32E33217AA70663BFAB085E97F9BB4F` |
-| V1 | Votación (versión con fecha) | `Votacion_1_con_fecha.pdf` (alias) | 2026-11-27 (campo `Fecha:`) | No registrada | `E2A376CD9696FDA15419E986C517E11748153C309E9DB4EDF536788250AD0D88` |
-| V2 | Votación (versión con fecha) | `Votacion_2_con_fecha.pdf` (alias) | 2026-11-27 (campo `Fecha:`) | No registrada | `58E7D1B07222BFF40ADFE020CD47EF5ED8B6010D060F965D2BF961EBC1B093CC` |
-| V3 | Votación (versión con fecha) | `Votacion_3_con_fecha.pdf` (alias) | 2026-11-27 (campo `Fecha:`) | No registrada | `B561BAEF93A5A66D4E5508F5887FE729DE13370E1251F90CACED559155C58EF2` |
-| --- | Captura de chat (recibida, no atribuible) | `Downloads/Captura de pantalla 2026-11-28 014245.png` | 2026-11-28 (recibida) | No aplica | `45A772FE7C999709AE2132B7AC2CC09FC1DF54BE0A478F636450282B5663EBDB` |
-| V1 | Declaración de corrección por chat | `Downloads/Captura de pantalla 2026-11-28 014533.png` | 2026-11-27 (declarada) | No aplica | `30A1CDB81896B03CB6EB1A0FAC50ADC0EFEA73F24CC84E2BBAB835372F112A4B` |
-| V3 | Declaración de corrección por chat | `Downloads/Captura de pantalla 2026-11-28 014539.png` | 2026-11-27 (declarada) | No aplica | `3BCEE4BBB8DD5151540CA6AA2492DF5B23DE068E6C3DD1A78444DEC95C19836B` |
-| --- | Paquete rechazado | `Downloads/WhatsApp Unknown 2026-11-28 at 12.51.34 AM.zip` | 2026-11-28 (recibido) | No aplica | `50A2F811C0D3BC9A9B6251C059A3AA123E135CCA7A0A7D3B925202229F934816` |
+## Perfiles declarados
 
-Los códigos acordados son `P1`–`P5` para la entrevista y el cuestionario Kano, y `V1`–`V3` para la votación ponderada, conforme al consentimiento `TA-IND-02-CONS`. El autor confirmó que las cinco respuestas Kano son de personas reales; el respaldo documental de la participación quedó registrado arriba con los ocho consentimientos firmados. La autenticidad de las respuestas depende además de los instrumentos originales, que conservan la fecha en blanco. Las 40 filas de `../datos/kano_respuestas.csv` se transcribieron de los cinco PDF anteriores (80 respuestas). Los 20 requisitos de `../datos/moscow.csv` se transcribieron de los dos originales de Downloads, que coinciden en ID, tipo, horas y clasificación; la IA solo adaptó el esquema, convirtió `Must`/`Should`/`Could` a `M`/`S`/`C` y aplicó las correcciones autorizadas por el autor. Por eso la huella del archivo adaptado es distinta a la de los originales: ambas se registran arriba con nombres diferentes. No se generaron respuestas ni requisitos.
+| Código | Perfil genérico | Instrumento |
+|---|---|---|
+| P1 | Médico veterinario | Entrevista y Kano |
+| P2 | Auxiliar veterinario | Entrevista y Kano |
+| P3 | Estudiante de medicina veterinaria | Entrevista y Kano |
+| P4 | Técnico agropecuario | Entrevista y Kano |
+| P5 | Asistente administrativo | Entrevista y Kano |
+| V1 | Propietario de mascota | Votación ponderada |
+| V2 | Cuidador de animales | Votación ponderada |
+| V3 | Propietario de mascota | Votación ponderada |
 
-Observaciones de los originales corregidos, registradas sin alterarlos: usan `P1`–`P5`, no contienen la nota “simulado” ni el código `TA-TAR-02`; el encabezado dice `Trabajo: Priorización de requisitos` (sin el código `TA-IND-02`) y `Estudiante: Robinson Espinoza Jeanpierre`. Las fechas de los participantes aparecen en blanco. El ZIP `cONSENSAU.zip` fue revisado y **no corresponde** a TA-IND-02: sus ocho imágenes coinciden con consentimientos `ENTR-01`…`ENTR-15` de otro estudio; por eso no se registró como evidencia.
+## Cadena de custodia
 
-El paquete `WhatsApp Unknown 2026-11-28 at 12.51.34 AM.zip` también fue revisado y **no corresponde a TA-IND-02**. Sus ocho imágenes son formularios del estudio «Sistema de gestión de acopio y pagos para una asociación de productores de cacao (Dominio N.º 6)»: siete son el desprendible de revocación y una es la declaración de consentimiento con una fecha de noviembre de ese otro estudio. Ninguna menciona «clínica veterinaria» ni `TA-IND-02`. No se registran como evidencia ni se modifican: cambiarles el nombre o el dominio sería fabricar un consentimiento. Huellas individuales: `FE31553387AFDB1740BC2D5830E30FB571305B3802A7048CFB39B5735ECB9CCF`, `892FEC3487A0E101DE8203139A605AF34A6A3D939F8BF8F10BAA3AA22F1A5BF2`, `2263123211C552D93339803FEB7414E209BDF6EBCF0BC42F2EC53162C71188C4`, `45849EBC7856C6A555738D0554B624E372E1230A8BD8715A9898C4EB8FDB13A6`, `BCF981D4A101D0209589E8BF24B3EA2EA81F42AEF2ECC54E56E5B232C815E6BC`, `22BCAF6FFA939D1AFF57ACAAAC0176259C2863C18823A969A1621FCEC10F284E`, `CE254645604A7853759754CEEBA03635B216991A501B3F38E9368C774A453639`, `C0DBB71B95F048893B0BAE174AAB15ED8EB833321A2FC769FB3B9A42D11FAF81`. El autor manifestó que la fecha real de la aplicación fue 2026-11-27, pero los participantes no la escribieron en esos formularios; una fecha recordada fuera del original no se añade al documento.
+| Código | Archivo custodiado | Fecha | SHA-256 |
+|---|---|---|---|
+| --- | `consentimiento_TA-IND-02.pdf` (plantilla en blanco) | 2026-11-27 (documento) | `A092B68DE048D5CD92E9F55AC0285BBAEE1747267FA359EE7A2DA8A8D3FD6007` |
+| --- | `cONSENSAU (2).zip` (8 carpetas, 3 imágenes cada una) | 2026-11-27 (manuscrita) | `3ABDDAC3C96AD008C18F2C2D5115E7CDF11F34110E92EE5B1B8BF6E5B8330965` |
+| --- | `Cuestionarios_veterinaria_P1-P5_corregidos.zip` | 2026-11-28 (recibido) | `462715D6B82422815CEE73B39CEB445921361564ABA2348C07973CE285AEAFF3` |
+| P1–P5 | `P1_entrevista_y_kano.pdf` … `P5_entrevista_y_kano.pdf` | No consta en el original | `B30BF9728DD9460FDB5B58AEC4E4FD793A281EB73BAD5E2616677E5ABE21A3FE`, `145060719CC97CDA42AC6A14064C1CA8BC76DBF2E7D33F54B1568299E2DC09D8`, `E418D76E5E7E6021EDADB6B777F1183ACE09A2BD308A178186F0DD08B9C2B294`, `48B110710A82F34C638A00E4810182EA5712B4729A03B5D9A75D58F1956939DB`, `CE63C7BCB4B1270D9C654F6276003262A49A398CBADDE5CC50B827D77A5D4B44` |
+| --- | `Downloads/moscow.csv` (original entregado) | 2026-11-28 (recibido) | `6B7482405C3D8F933738D135CF0E07A33DB87A8247A409508F67D46AA1F80A17` |
+| --- | `Downloads/moscow_requisitos.xlsx` (original entregado) | 2026-11-28 (recibido) | `E221E6F037EE5AB407A159699F749FA818D5A8ACA60E258EC719FED498D4EBC8` |
+| --- | `datos/moscow.csv` (adaptado y corregido) | 2026-11-28 (revisión) | `A6AD03F085386C76FB5CDBD6BC16F5136DAFBAB2E82497B758F1FE4057106EEE` |
+| --- | `Votaciones_1_a_3.pdf.zip` (originales) | 2026-11-28 (recibido) | `4A8511CCB3B7B649A952DDD07428A16E97CEE60477DA637F58E749ED203B1F1D` |
+| V1–V3 | `V1.jpeg`, `V2.jpeg`, `V3.jpeg` (boletas conservadas como imagen) | 2026-11-27 (campo manuscrito) | `67FF1AC4F4CB6377D64EE7FB1459C3820835BB143DA7F35B37E5FAA93457E044`, `B0EE34E3BCE79627FC2EE67E265DCA5474DEFCD05913B3A765690ABAFB0FB8B1`, `E54993CE4F79B60348F2040C9CB50921413907B2E0B9437340CEA69CEEF4BF3E` |
+| --- | `Votaciones_1_a_3_corregido_con_fecha.zip` | 2026-11-28 (recibido) | `E64C0F2D749B45045EF8AF0C4694050CC32E33217AA70663BFAB085E97F9BB4F` |
+| V1 | Declaración de corrección de `R20` de 3 a 2 | 2026-11-27 (declarada) | `30A1CDB81896B03CB6EB1A0FAC50ADC0EFEA73F24CC84E2BBAB835372F112A4B` |
+| V3 | Declaración de corrección de `R16` de 4 a 3 | 2026-11-27 (declarada) | `3BCEE4BBB8DD5151540CA6AA2492DF5B23DE068E6C3DD1A78444DEC95C19836B` |
+| --- | `datos/kano_respuestas.csv` (40 pares, 80 respuestas) | 2026-11-28 (transcripción) | `CD2FF66187D2B9E2756D4A6CB0ED74D5A048645C0FB2EB845001C48B90E5D1B0` |
+| --- | `datos/votacion.csv` (60 filas, validado) | 2026-11-28 (transcripción) | `5C304E9D78191A20326D425F252F2ABD24C3D6BC9E4ABF81A1B1A2915E477BE5` |
+| --- | `datos/tres_rhos.csv` (resultado reproducible) | 2026-11-28 (cálculo) | `36354DAB57756FF06A47D4E9F5FC67AB95A42D20D2FF1DA877FEE07046A2BFF4` |
 
-El formulario `consentimiento_TA-IND-02.pdf` sigue siendo la plantilla en blanco. Se recibieron ocho consentimientos de este estudio (`TA-IND-02-CONS`, caso «sistema de gestión de historias clínicas y vacunas para una clínica veterinaria») con códigos `P1`–`P5` y `V1`–`V3`, nombre, cédula, fecha impresa `27/11/2026` y una imagen adicional en la línea «Firma del participante». Los archivos llegaron el `28/11/2026` entre las 01:18 y 01:21; la fecha impresa es la declarada por el autor y no se alteró ningún campo. El paquete `(2)` es idéntico al `(1)` (misma huella) y el paquete sin sufijo es una versión anterior sin la imagen de firma del participante; por eso se usa `(1)`. Los nombres reales de los archivos incluyen apellidos y no se reproducen en el repositorio: se sustituyen por alias y solo se publican las huellas.
+## Huellas de las 24 imágenes de consentimiento
 
-Las boletas `V1`–`V3` y sus huellas están registradas arriba. La lectura inicial de los veinte valores impresos dio 101 puntos en `V1` y en `V3`, y 100 en `V2`, aunque las tres boletas imprimen «TOTAL 100». El asistente aplicó dos cambios por confirmación de chat (`V1`: `R20` de 3 a 2; `V3`: `R16` de 4 a 3), pero eso **no era una corrección hecha por cada votante en su boleta**. En ese momento `../datos/votacion.csv` quedó marcado como **no validado**. Las tres boletas originales se custodian fuera del repositorio y no se sustituyen; la versión corregida se registró después como archivo distinto con su propia huella. No se inventó ningún voto. El estado final de validación se cierra al final de este manifiesto.
+Las imágenes se registran tal como llegaron, sin deduplicar: algunas se repiten entre carpetas. Los alias no reproducen nombres de archivo personales.
 
-Se recibió después un paquete `Votaciones_1_a_3_corregido.zip` con tres PDF cuyos valores coinciden exactamente con los dos cambios que el asistente había aplicado por chat (`V1`: `R20` 2; `V3`: `R16` 3; `V2` sin cambios). Los tres suman 100 y sus huellas están registradas arriba, pero en ese momento **no se consideraron correcciones hechas por los votantes**: el campo `Fecha:` estaba en blanco en los tres archivos, no había marcas manuscritas ni imágenes incrustadas, y el PDF de `V2` declara `/Producer (pypdf)`, lo que indica edición programática. Por eso `../datos/votacion.csv` siguió marcado como **no validado**. Para validarlo hacía falta que `V1` y `V3` declararan por separado qué casilla cambió y cuándo; las originales de 101 puntos se conservan en ambos casos.
+| Código | Imagen | SHA-256 |
+|---|---|---|
+| P1-01 | `6e17fed0-2e46-4683-8e80-ed2584108d3d.jpg` | `B367D2D15E4DE7076AD24B3BFAD4CE9CE9C1951C8A73A5858AF8D25BE53C677A` |
+| P1-02 | `WhatsApp Image 2026-11-28 at 2.26.09 AM.jpeg` | `C5077BFF7C7209A68BC050F0F3BC15D75D3113D228DA645CC414E77267A6DABB` |
+| P1-03 | `WhatsApp Image 2026-11-28 at 2.26.10 AM.jpeg` | `D656A0D333CBE0B6184611BC8E2E1AA37DEE043434F78FFF0409A388BE048A93` |
+| P2-01 | `41a8a6cc-768e-4480-af95-3266ab3316a7.jpg` | `EB03A646D25402B7DAAAB8B92C8E92927ED15DB58B6A24B0074A18DA7084F0E7` |
+| P2-02 | `479834b6-784f-49f5-92a5-cd44c9f70841.jpg` | `24AC729A30174C93E2D6F6FCD18D6F132857E9916F317A71C7AA5FD0889134B0` |
+| P2-03 | `85ea49fa-1b40-40fa-8b9d-a423a295d0ed.jpg` | `B3B4B4B5940F7D1626E114F1E67150DD5857F3308859AE6154502E1F9BA32F69` |
+| P3-01 | `068926ed-e1ca-4847-aef7-aaf8f12bd0d2.jpg` | `2A24A270B99B73F8FB560A54C18043D12145829EEA810B7002C660295966B635` |
+| P3-02 | `3712e21c-8be8-4290-94bf-a7d634760486.jpg` | `6E8EAC4E80D8F93EBC751749731368122053614B744F17FF36A7DCCA373BA340` |
+| P3-03 | `3ea0143c-89fd-4244-a684-bb3ccfaad898.jpg` | `DA427FE653F6643DD9FFE33D1D6389038CD26A2458AC221E152DFAD66EC41F53` |
+| P4-01 | `183c308c-3182-48b5-9ca2-7887960071ff.jpg` | `3846FE34F2FEBB30F1FA270C3ACAFDFADB311A2EDBCCF24F60300AAF9FAB1EBE` |
+| P4-02 | `a4d74735-a6f7-4824-b151-9dc71b888100.jpg` | `308BC0B2BA9DF97C58F8C422B25DB0FFCD632255E37D0167CD9D4D474700873C` |
+| P4-03 | `fe456138-00ed-4258-bcfc-c44cc88c145b.jpg` | `BEE42D70F47CC431E2FAC7C5265207BCF521E62508312590D9686ECAEC7C97FE` |
+| P5-01 | `17632f59-82c0-4ea8-841a-6854f65d77b5.jpg` | `DA5779E1BC235C73B928ADE126DB7A73A7CC50ADB9EC73C4BE7158129347FAD5` |
+| P5-02 | `a7892065-b4b5-449f-97b3-6dfad5562498.jpg` | `376977D698DF26FC6B5817DBF4BBCA8B5373D7B8F0A83A01EA25E50051C076F4` |
+| P5-03 | `e3e0a5d8-a777-4e05-a171-2e0f3987d05b.jpg` | `94E2F393B7EF8A0D09C0E480E9853C716007474F4AAEFFE89183FB47F6273E5D` |
+| V1-01 | `17632f59-82c0-4ea8-841a-6854f65d77b5.jpg` | `DA5779E1BC235C73B928ADE126DB7A73A7CC50ADB9EC73C4BE7158129347FAD5` |
+| V1-02 | `4cffe4a0-0cd1-4f16-988e-79cdcee22801.jpg` | `AFBE29B32EA8FCFA7B4DC0A74C485F7D6E6046335D1F8A2CD6782837000ADC26` |
+| V1-03 | `e3e0a5d8-a777-4e05-a171-2e0f3987d05b.jpg` | `94E2F393B7EF8A0D09C0E480E9853C716007474F4AAEFFE89183FB47F6273E5D` |
+| V2-01 | `0a455f77-c7b3-432e-b91b-70a23345fb03.jpg` | `94E80A88BBCD356663E59CA9B2F06B03E47C849413B552F92CB5978EB3149915` |
+| V2-02 | `6e17fed0-2e46-4683-8e80-ed2584108d3d.jpg` | `B367D2D15E4DE7076AD24B3BFAD4CE9CE9C1951C8A73A5858AF8D25BE53C677A` |
+| V2-03 | `98a1fd4b-47e6-446d-9e90-4ffe85d63dd7.jpg` | `D656A0D333CBE0B6184611BC8E2E1AA37DEE043434F78FFF0409A388BE048A93` |
+| V3-01 | `17632f59-82c0-4ea8-841a-6854f65d77b5.jpg` | `DA5779E1BC235C73B928ADE126DB7A73A7CC50ADB9EC73C4BE7158129347FAD5` |
+| V3-02 | `e0491017-ade8-47e7-890c-4e10aaf961de.jpg` | `94FC575F8C348FF8DB6EA231A5D31A925643AABEFA8EA11889E52B65AAD7C032` |
+| V3-03 | `e3e0a5d8-a777-4e05-a171-2e0f3987d05b.jpg` | `94E2F393B7EF8A0D09C0E480E9853C716007474F4AAEFFE89183FB47F6273E5D` |
 
-Llegó después `Votaciones_1_a_3_corregido_con_fecha.zip`: los mismos veinte valores, ahora con `27/11/2026` escrito en el campo `Fecha:` de las tres boletas. El autor explicó que los votantes hicieron el cálculo en una hoja y que él transcribió esos valores a los PDF por falta de tiempo. Las huellas están registradas arriba. Aun así, el archivo sigue siendo una transcripción hecha por el autor, sin marca manuscrita ni firma de `V1` o `V3` en la boleta corregida; por sí solo no demostraba que cada votante corrigió su propio ejemplar. Para cerrar el respaldo hacía falta la hoja original donde `V1` y `V3` escribieron sus valores, o un mensaje/declaración de cada uno que confirmara explícitamente los cambios. Hasta ese momento `../datos/votacion.csv` permaneció **no validado**; las declaraciones que cierran el respaldo se describen a continuación.
+## Notas de integridad
 
-Se recibió primero una captura de chat con las dos correcciones juntas, sin remitente visible; se registró como recibida y **no atribuible**. Después se recibieron dos capturas independientes, leídas por OCR, cuyos textos son: «Yo, V1, corregí mi boleta: R20 de 3 a 2 el 27/11/2026» y «Yo, V3, corregí mi boleta: R16 de 4 a 3 el 27/11/2026». Cada mensaje nombra al votante y su propia corrección, con la misma fecha que aparece en las boletas `..._con_fecha.zip`. Los originales se custodian fuera del repositorio y sus huellas están arriba; el número de teléfono y el resto del chat no se publican.
-
-Con esas dos declaraciones se cierra el respaldo de las correcciones. El autor transcribió los valores a los PDF por falta de tiempo, pero la corrección de cada casilla la declaró el votante correspondiente. Por tanto `../datos/votacion.csv` queda **validado**: usa los veinte valores de `Votaciones_1_a_3_corregido_con_fecha.zip`, en los que cada boleta suma 100. Las tres boletas originales de 101/100/101 puntos se conservan sin sustituir. La secuencia completa (corrección del asistente por chat, versiones sin fecha, versión con fecha y declaraciones) se conserva en este manifiesto para que no se oculte ningún paso.
+- La evidencia vigente de consentimiento es `cONSENSAU (2).zip`, con firma y fecha manuscritas. El paquete `8_consentimientos_TA-IND-02 (1).zip` (`969D75A40228BCD3CE77563987743F48E5AAA3FBC05AEEB4839E963BEAB6BBF5`) queda como intento anterior; no sustituye al manuscrito.
+- `cONSENSAU.zip` (`7201534DC28FDAE092D4C4A79FB60168F3C2FB3155CA60307FDA27897435507C`) y el paquete de cacao (`50A2F811C0D3BC9A9B6251C059A3AA123E135CCA7A0A7D3B925202229F934816`) corresponden a otros estudios; no se registran como evidencia de TA-IND-02. La captura no atribuible (`45A772FE7C999709AE2132B7AC2CC09FC1DF54BE0A478F636450282B5663EBDB`) tampoco se usa.
+- Las boletas originales sumaban 101/100/101. El asistente aplicó dos cambios por chat en una versión no válida; después `V1` y `V3` declararon por separado sus correcciones el `27/11/2026`. El autor transcribió los valores a los PDF por falta de tiempo y conservó las originales. No se inventó ningún voto ni se borró el historial.
+- Los instrumentos Kano y las boletas `V1`--`V3` se conservan como instrumentos existentes. Los enunciados finales de `R13`, `R14`, `R19` y `R12` se refinaron después de aplicarlos; las diferencias se declaran en el informe y no se han reescrito las respuestas originales.
+- Las huellas de los CSV corresponden a los archivos finales del repositorio. Los scripts y el historial de commits permiten reproducir las tablas y los cálculos sin modificar la evidencia de campo.
