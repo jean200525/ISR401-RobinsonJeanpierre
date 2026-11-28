@@ -6,7 +6,7 @@
 
 - Cuestionario Kano y entrevista: `P1`–`P5`, según el consentimiento `TA-IND-02-CONS`.
 - Votación ponderada: `V1`–`V3`, según el mismo consentimiento.
-- La correspondencia entre Participantes y votantes se documentará en el manifiesto cuando se reciban los originales.
+- Los ocho consentimientos firmados se custodian fuera del repositorio; en el manifiesto solo se publican código, fecha y SHA-256, sin nombres ni cédulas.
 
 ## Archivos
 
