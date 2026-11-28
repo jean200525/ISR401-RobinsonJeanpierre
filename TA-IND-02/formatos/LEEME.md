@@ -1,6 +1,6 @@
 # Instrumentos en blanco de TA-IND-02
 
-Los archivos de esta carpeta son plantillas vacías. El autor las aplica a las personas participantes; la IA solo las transcribió a LaTeX y compiló los PDF.
+Los archivos de esta carpeta son plantillas vacías. El autor las preparó y las aplica a las personas participantes; la IA solo apoyó en la revisión ortográfica y en errores de compilación.
 
 - `entrevista_ta_ind_02.pdf`: 20 preguntas de entrevista sobre el funcionamiento actual y el sistema propuesto.
 - `cuestionario_kano_ta_ind_02.pdf`: 8 características con su pregunta funcional y disfuncional.
