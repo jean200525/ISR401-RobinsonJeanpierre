@@ -19,7 +19,7 @@ El resultado es `main.pdf`. La secuencia debe ejecutarse completa porque las ref
 
 Paquetes LaTeX usados: `inputenc`, `fontenc`, `lmodern`, `babel` con la opción `spanish`, `geometry`, `booktabs`, `graphicx`, `longtable`, `float` y `hyperref`. La bibliografía usa el estilo `IEEEtran` y el archivo `referencias.bib`.
 
-Si tu sistema no trae el idioma español de `babel`, ese es un problema de la instalación local, no del repositorio: instala el paquete `babel-spañol` o compila en una distribución que lo incluya. No se ha eliminado `babel` del repositorio para ocultar ese fallo.
+Si tu sistema no trae el idioma español de `babel`, instala el paquete `babel-spañol` o compila en una distribución que lo incluya.
 
 ## Datos y scripts
 
@@ -38,7 +38,7 @@ Python 3 no estaba instalado en el equipo de trabajo; por eso los rho publicados
 
 ## Evidencia
 
-Los originales firmados y los instrumentos se custodian en la carpeta institucional privada `@uteq.edu.ec`, compartida con el docente responsable. En el repositorio público solo se publican códigos, fechas y huellas SHA-256 en `evidencias/MANIFIESTO.md`; no se publican nombres, cédulas, firmas, rostros ni teléfonos.
+Los originales firmados y los instrumentos se custodian en la carpeta institucional privada `@uteq.edu.ec`, compartida con el docente responsable. En el repositorio público solo se publican códigos, fechas y huellas SHA-256 en `evidencias/MANIFIESTO.md`; no se publican nombres, cédulas, firmas, rostros ni teléfonos. Las imágenes `V1.jpeg`–`V3.jpeg` muestran los valores corregidos y suman 100; las boletas originales de 101/100/101 puntos se conservan en el historial y en la carpeta privada, sin sustituirse. Los cuestionarios Kano vigentes son los PDF «corregidos» y mantienen el campo de fecha en blanco, tal como se recibieron.
 
 ## Comprobación mínima
 
@@ -46,7 +46,7 @@ Tras compilar, verificar en `main.log`:
 
 - 0 errores (`!`).
 - 0 advertencias `Overfull` y 0 referencias `Undefined`.
-- La bibliografía contiene cuatro entradas citadas.
+- La bibliografía contiene cinco entradas citadas.
 - `main.pdf` tiene al menos 6 páginas.
 
 El PDF de una página para el SGA se mantiene en `entrega-sga.pdf` y se compila por separado con `entrega-sga.tex`.
