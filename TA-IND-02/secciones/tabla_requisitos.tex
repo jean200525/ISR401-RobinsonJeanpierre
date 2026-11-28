@@ -1,0 +1,30 @@
+\textbf{Requisitos formulados: 20 en total, 12 funcionales y 8 de calidad.}\\
+
+\begin{longtable}{@{}llp{10.5cm}r@{}}
+\toprule
+ID & Tipo & Enunciado & h \\
+\midrule
+\endhead
+R01 & F & El sistema deberá permitir registrar cada mascota con un código único y los campos obligatorios nombre, especie y propietario; además podrá guardar raza, sexo, edad, peso y señas particulares. & 8 \\
+R02 & F & El sistema deberá permitir registrar los datos de contacto del propietario, al menos nombre y teléfono, asociados a una o varias mascotas. & 4 \\
+R03 & F & El sistema deberá permitir registrar antecedentes, alergias y enfermedades previas de cada mascota. & 5 \\
+R04 & F & El sistema deberá permitir registrar cada consulta con los seis campos definidos: fecha, motivo, síntomas, diagnóstico, tratamiento y observaciones del veterinario. & 8 \\
+R05 & F & El sistema deberá mostrar en orden cronológico todas las consultas anteriores de una mascota. & 6 \\
+R06 & F & El sistema deberá permitir registrar las vacunas aplicadas a cada mascota, indicando tipo de vacuna, fecha de aplicación y responsable. & 6 \\
+R07 & F & El sistema deberá permitir registrar la fecha de la próxima dosis o del siguiente control de vacunación. & 4 \\
+R08 & F & El sistema deberá mostrar al personal de la clínica un aviso visible al menos 3 días antes de la fecha programada de vacunación, cuando exista una próxima dosis registrada. & 6 \\
+R09 & F & El sistema deberá mostrar una lista de mascotas cuya fecha de vacunación sea igual o anterior a los 7 días siguientes, para planificar los controles de la semana. & 5 \\
+R10 & F & El sistema deberá permitir buscar mascotas por nombre, código de paciente o teléfono del propietario. & 5 \\
+R11 & F & El sistema deberá gestionar citas veterinarias registrando fecha, hora, mascota y motivo de atención en un único registro consultable. & 6 \\
+R12 & F & El sistema deberá registrar el seguimiento complementario de cada mascota (desparasitación y control de peso) como eventos fechados con observación. & 4 \\
+R13 & C & El sistema deberá restringir la creación, modificación y eliminación de historias clínicas según el rol del usuario. & 8 \\
+R14 & C & El sistema deberá garantizar la trazabilidad de las modificaciones de historias clínicas, registrando el usuario responsable y la fecha y hora de cada cambio. & 6 \\
+R15 & C & El sistema deberá mantener la integridad de los registros evitando duplicados por código de mascota o por coincidencia de nombre, especie y teléfono del propietario. & 6 \\
+R16 & C & El sistema deberá permitir consultar una ficha clínica en máximo 3 segundos en el 95 \% de los casos, con hasta 1.000 mascotas registradas y conexión estable. & 5 \\
+R17 & C & El sistema deberá realizar al menos una copia de seguridad diaria de la información clínica y permitir recuperar los datos respaldados en máximo 4 horas. & 6 \\
+R18 & C & El sistema deberá permitir que al menos 4 de cada 5 usuarios del personal completen el registro y la búsqueda de una mascota en máximo 3 minutos, sin asistencia, en una prueba de uso. & 6 \\
+R19 & C & El sistema deberá mantener la portabilidad del historial clínico, permitiendo exportarlo o imprimirlo con datos completos y legibles para entregarlo al propietario o compartirlo con otro profesional. & 4 \\
+R20 & C & El sistema deberá mantener disponibles los registros durante el horario de atención definido y configurable por la clínica, con al menos 99 \% mensual. & 6 \\
+\bottomrule
+\end{longtable}
+
