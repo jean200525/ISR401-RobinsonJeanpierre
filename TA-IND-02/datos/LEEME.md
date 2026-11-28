@@ -1,6 +1,6 @@
 # Formato de los datos de TA-IND-02
 
-Los CSV están vacíos a la espera de los datos reales que tabule el autor. La IA solo preparó las plantillas y los scripts; no generó participantes, respuestas ni votos.
+`kano_respuestas.csv` ya contiene las 40 filas transcritas de los cinco cuestionarios corregidos `P1`–`P5`; sus huellas están en `../evidencias/MANIFIESTO.md`. Los CSV de MoSCoW y votación siguen vacíos a la espera de los datos que tabule el autor. La IA solo preparó las plantillas, transcribió las respuestas y escribió los scripts; no generó participantes, respuestas ni votos.
 
 ## Códigos
 
@@ -11,7 +11,7 @@ Los CSV están vacíos a la espera de los datos reales que tabule el autor. La I
 ## Archivos
 
 - `kano_caracteristicas.csv`: 8 características Kano con pregunta funcional y disfuncional. La columna `requisito_relacionado` se completa cuando el autor defina `R01`–`R20`.
-- `kano_respuestas.csv`: una fila por participante y característica (`5 × 8 = 40` pares, 80 respuestas). Columnas: `participante,caracteristica,respuesta_funcional,respuesta_disfuncional`.
+- `kano_respuestas.csv`: una fila por participante y característica (`5 × 8 = 40` pares, 80 respuestas), transcrita de los PDF corregidos. Columnas: `participante,caracteristica,respuesta_funcional,respuesta_disfuncional`. Las etiquetas son las literales de las opciones: `me gusta`, `espero que sea así`, `me resulta indiferente`, `puedo aceptarlo`, `no me gusta`.
 - `moscow.csv`: una fila por requisito. Columnas: `requisito,tipo,enunciado,criterio_verificacion,horas,moscow,justificacion`. MoSCoW usa `M`, `S`, `C` o `W`.
 - `votacion.csv`: 20 filas por votante, con enteros no negativos. Cada votante debe sumar exactamente 100.
 - `.gitattributes` conserva los CSV con saltos LF para que las huellas SHA-256 sean reproducibles.

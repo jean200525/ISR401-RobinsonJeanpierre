@@ -1,1 +1,41 @@
 participante,caracteristica,respuesta_funcional,respuesta_disfuncional
+P1,K1,me gusta,no me gusta
+P1,K2,me gusta,puedo aceptarlo
+P1,K3,me gusta,no me gusta
+P1,K4,me gusta,puedo aceptarlo
+P1,K5,me gusta,no me gusta
+P1,K6,espero que sea así,puedo aceptarlo
+P1,K7,me gusta,no me gusta
+P1,K8,espero que sea así,puedo aceptarlo
+P2,K1,me gusta,no me gusta
+P2,K2,me gusta,no me gusta
+P2,K3,me gusta,puedo aceptarlo
+P2,K4,espero que sea así,me resulta indiferente
+P2,K5,me gusta,puedo aceptarlo
+P2,K6,me gusta,no me gusta
+P2,K7,espero que sea así,me resulta indiferente
+P2,K8,espero que sea así,puedo aceptarlo
+P3,K1,me gusta,puedo aceptarlo
+P3,K2,me gusta,no me gusta
+P3,K3,me gusta,no me gusta
+P3,K4,espero que sea así,puedo aceptarlo
+P3,K5,me gusta,no me gusta
+P3,K6,me gusta,puedo aceptarlo
+P3,K7,me gusta,no me gusta
+P3,K8,espero que sea así,me resulta indiferente
+P4,K1,espero que sea así,puedo aceptarlo
+P4,K2,me gusta,no me gusta
+P4,K3,me gusta,no me gusta
+P4,K4,espero que sea así,me resulta indiferente
+P4,K5,me gusta,puedo aceptarlo
+P4,K6,espero que sea así,puedo aceptarlo
+P4,K7,me gusta,no me gusta
+P4,K8,espero que sea así,puedo aceptarlo
+P5,K1,me gusta,no me gusta
+P5,K2,me gusta,puedo aceptarlo
+P5,K3,me gusta,no me gusta
+P5,K4,me gusta,puedo aceptarlo
+P5,K5,me gusta,no me gusta
+P5,K6,me gusta,puedo aceptarlo
+P5,K7,me gusta,no me gusta
+P5,K8,espero que sea así,me resulta indiferente
