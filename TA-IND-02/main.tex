@@ -20,16 +20,42 @@ Ingeniería de Requerimientos (ISR-401), UTEQ}
 \maketitle
 
 \section{Dominio y requisitos}
+El dominio trabajado es una \textbf{clínica veterinaria}, centrado en las historias clínicas y el control de vacunas. Es un dominio distinto al empleado en el PFC, por lo que no se reutilizan sus datos ni sus instrumentos. El autor formuló veinte requisitos: doce funcionales y ocho de calidad. Cada requisito incluye un criterio verificable con métrica, umbral y condición de medición, siguiendo las recomendaciones de \cite{wiegers2013} y \cite{iso29148}. El esfuerzo total tabulado es de 114 horas, sin que se modificaran las horas originales para ajustar categorías.
+
+\input{secciones/tabla_requisitos}
+
+Las entrevistas y el cuestionario Kano se aplicaron con los códigos \texttt{P1}--\texttt{P5}. Las justificaciones citan esos códigos solo cuando el original entrevistado respalda la afirmación.
 
 \section{Priorización con MoSCoW}
+La clasificación MoSCoW organiza el esfuerzo en \textbf{Must} (imprescindible para la primera versión), \texttt{Should} (importante pero no bloqueante), \texttt{Could} (deseable si sobra capacidad) y \texttt{Won't} (fuera de la versión 1). Se aplicó la regla de que los Must no superen el 60\% del esfuerzo total. El límite para este conjunto es 68,4 h; la versión corregida queda en 66 h (57,89\%).
+
+\input{secciones/tabla_moscow_resumen}
+
+Para cumplir la regla sin rebajar horas se reclasificaron dos requisitos: \texttt{R09} pasó de Must a Should porque el control de vacunas pendientes quedó empatado entre atractivo e indiferente en Kano; \texttt{R12} pasó a Won't por ser un seguimiento complementario y no imprescindible. El total de horas se conserva en 114. El requisito \texttt{R19} se formuló como atributo de portabilidad, no como una función aislada, de modo que se mantienen ocho requisitos de calidad.
 
 \section{Análisis Kano}
+Se aplicaron ocho características Kano a cinco participantes (\texttt{P1}--\texttt{P5}). Cada característica tiene una pregunta funcional y otra disfuncional, lo que produce 40 pares de respuestas y 80 respuestas en total. La clasificación usa la tabla de evaluación estándar: atractiva (A), indiferente (I), basicidad (M), desempeño (O), reversa (R) y cuestionable (Q). El enfoque sigue la lógica de priorización descrita por \cite{pohl2025}.
+
+\input{secciones/tabla_kano}
+
+\input{secciones/tabla_kano_conteo}
+
+Las características con mayoría desempeño son \texttt{K1}, \texttt{K2}, \texttt{K3}, \texttt{K5} y \texttt{K7}; \texttt{K4} y \texttt{K8} son indiferentes. \texttt{K6} no tiene mayoría: dos respuestas atractivas, dos indiferentes y una de desempeño. Por eso se conserva el empate y no se fuerza una categoría; ese resultado es la base para mantener \texttt{R09} como Should.
 
 \section{Votación ponderada}
+La boleta \texttt{formatos/boleta\_votacion\_R01-R20.pdf} contiene los veinte enunciados finales y una columna de puntos en blanco. Cada votante (\texttt{V1}--\texttt{V3}) debe distribuir exactamente 100 puntos enteros no negativos entre los veinte requisitos, sin escribir su nombre. El archivo \texttt{datos/votacion.csv} contiene únicamente el encabezado; en esta versión no se presentan valores de $\rho$ ni un orden derivado porque no hay votos tabulados.
+
+El cálculo previsto en \texttt{datos/calcular\_spearman.py} valida que cada boleta sume 100, convierte los puntos a rangos con promedio para empates y calcula el rho de Spearman como correlación de Pearson sobre esos rangos. La comparación se hará sobre el mismo conjunto de identificadores \texttt{R01}--\texttt{R20}: el orden MoSCoW, el orden Kano proyectado sobre los ocho requisitos enlazados y el orden de la votación ponderada.
 
 \section{Comparación de técnicas}
+MoSCoW aporta una restricción de capacidad: 114 h en total y un techo de 66 h para Must. Kano aporta la percepción del usuario: cinco de ocho características muestran desempeño, dos son indiferentes y una queda empatada. La votación ponderada aporta el peso relativo que los tres votantes asignen a los mismos veinte requisitos. Las tres técnicas no se sustituyen entre sí: MoSCoW decide factibilidad, Kano explica satisfacción y la votación ponderada mide prioridad percibida.
+
+Cuando las boletas estén tabuladas, los tres órdenes se compararán con rangos promediados sobre el mismo conjunto \texttt{R01}--\texttt{R20}. Las diferencias entre el orden MoSCoW y el orden de votación indicarán si el esfuerzo y la percepción coinciden; el empate de \texttt{K6} se reportará como tal y no se usará para forzar una categoría.
 
 \section{Decisión final}
+Con los datos disponibles, la versión 1 incluye diecinueve requisitos: los once Must (66 h), los siete Should (40 h) y el único Could (\texttt{R19}, 4 h). Queda excluido \texttt{R12} (W, 4 h) porque registra desparasitación y control de peso como seguimiento complementario. También se deja constancia de que \texttt{R09} no entra como Must: el empate de \texttt{K6} y la existencia de \texttt{R08} con aviso individual de 3 días justifican su clasificación como Should con horizonte semanal de 7 días.
+
+La decisión definitiva incorporará el orden de votación cuando el autor tabule las boletas \texttt{V1}--\texttt{V3}. Ninguna herramienta de IA participó en esta decisión ni en la elección de exclusiones.
 
 \section{Declaración de uso de inteligencia artificial}
 El autor, Jeanpierre Robinson Espinoza, definió el dominio, redactó los veinte requisitos, sus criterios de verificación y sus justificaciones, y es responsable de aplicar los instrumentos a las personas participantes (\texttt{P1}--\texttt{P5} en Kano y \texttt{V1}--\texttt{V3} en votación), de la tabulación, de comprobar los cálculos y de la decisión final. Confirmó que las cinco respuestas Kano son de personas reales. OpenCode (modelo Big Pickle) y Claude (Anthropic) actuaron únicamente como apoyo técnico bajo su supervisión: transcribir los instrumentos a LaTeX, preparar plantillas y boletas en blanco, adaptar el esquema de los CSV, convertir \texttt{Must}/\texttt{Should}/\texttt{Could} a \texttt{M}/\texttt{S}/\texttt{C}, escribir los scripts de clasificación Kano y de Spearman con rangos promediados, corregir errores de compilación y revisar la redacción. La IA no generó participantes, respuestas, votos, requisitos ni decisiones; las justificaciones citan \texttt{P1}--\texttt{P5} solo donde constan en los originales. Esta revisión también se declara, y el historial de commits conserva íntegramente los cambios realizados.
