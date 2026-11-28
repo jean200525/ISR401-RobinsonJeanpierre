@@ -11,21 +11,23 @@ Repositorio personal de la asignatura **Ingeniería de Requerimientos (ISR-401)*
 | `FORM-TL-01/main.bib` | Entradas bibliográficas de referencia (espejo de la bibliografía del documento). |
 | `SGA/datos_informativos.tex` | Fuente del PDF de una sola página para el SGA. |
 | `SGA/datos_informativos.pdf` | PDF de una sola página con los datos informativos y la URL del repositorio. |
+| `TA-IND-01/main.tex` | Fuente LaTeX de la actividad TA-IND-01. |
+| `TA-IND-01/main.pdf` | PDF compilado de TA-IND-01. |
 | `TA-IND-02/main.tex` | Fuente LaTeX del informe de priorización de requisitos. |
-| `TA-IND-02/main.pdf` | PDF compilado del informe (se genera con los comandos de abajo; pendiente). |
 | `TA-IND-02/referencias.bib` | Entradas bibliográficas en formato BibTeX, estilo IEEE. |
-| `TA-IND-02/datos/` | Respuestas Kano, votaciones ponderadas y cálculos en CSV (pendiente). |
-| `TA-IND-02/evidencias/MANIFIESTO.md` | Plantilla del manifiesto de participantes sin datos personales. |
+| `TA-IND-02/formatos/` | Instrumentos en blanco: entrevista, cuestionario Kano y boleta de votación. |
+| `TA-IND-02/datos/` | Plantillas CSV vacías para Kano, MoSCoW y votación ponderada. |
+| `TA-IND-02/evidencias/MANIFIESTO.md` | Metadatos de la evidencia custodiada, sin nombres ni datos personales. |
 
 ## Requisitos
 
 - Una distribución LaTeX con `pdflatex` (TeX Live 2023 o superior, o MiKTeX 23 o superior).
-- Paquetes: `inputenc`, `fontenc`, `babel-spanish`, `geometry`, `amsmath`, `amssymb`, `longtable`, `booktabs`, `array`, `xcolor`, `enumitem`, `graphicx`, `hyperref`, además de `IEEEtran.bst` (paquete `ieeetran`) para TA-IND-02.
+- Paquetes LaTeX: `inputenc`, `fontenc`, `lmodern`, `babel-spanish`, `geometry`, `amsmath`, `amssymb`, `longtable`, `booktabs`, `array`, `xcolor`, `enumitem`, `graphicx`, `float`, `hyperref`, además de `IEEEtran.bst` (`ieeetran`) para TA-IND-02.
 
-En una instalación mínima (TinyTeX) se pueden instalar con:
+En una instalación mínima (TinyTeX) se pueden instalar con (en `tlmgr`, `longtable`/`array` vienen en `tools` y `graphicx` en `graphics`):
 
 ```bash
-tlmgr install babel-spanish geometry amsmath longtable booktabs xcolor enumitem graphicx hyperref ieeetran
+tlmgr install babel-spanish geometry amsmath tools booktabs xcolor enumitem graphics hyperref lmodern float ieeetran
 ```
 
 ## Compilación del documento principal
